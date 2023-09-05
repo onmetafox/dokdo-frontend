@@ -1,0 +1,40 @@
+.bg-p{
+    background-color: #0B0B0F;
+}
+.bg-s{
+    background-color: #1A1B23;
+}
+.bg-s{
+    background-color: #393A47;
+}
+.bg-d{
+    background-color: #2B2C32;
+}
+
+.t-p {
+    color: #FFFFFF;
+}
+.t-s {
+    color: #B5B5B5;
+}
+.t-d {
+    color: #868A91; 
+}
+.bg-op {
+    background-color: #ED5C15;
+}
+.bg-os {
+    background-color: #FFAF36;
+}
+.bg-od {
+    background-color: #C78144;
+}
+.bg-gp {
+    background: linear-gradient(90deg, #ED5C15, #FFAF36);
+}
+.bg-gh {
+    background: linear-gradient(90deg, #FF5400, #FFA217);
+}
+.bg-gs {
+    background: linear-gradient(90deg, #FFAF36, #0047FF, #FF6A3C);
+}

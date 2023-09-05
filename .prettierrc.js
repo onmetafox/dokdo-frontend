@@ -1,0 +1,22 @@
+module.exports = {
+  // bracketSameLine: false,
+  // embeddedLanguageFormatting: "auto",
+  // htmlWhitespaceSensitivity: "css",
+  // insertPragma: false,
+  // jsxSingleQuote: false,
+  // proseWrap: "preserve",
+  // quoteProps: "as-needed",
+  // requirePragma: false,
+  // semi: true,
+  // tabWidth: 2,
+  // useTabs: false,
+  // vueIndentScriptAndStyle: false,
+
+  bracketSpacing: true,
+  bracketSameLine: false,
+  singleQuote: true,
+  trailingComma: 'all',
+  arrowParens: 'avoid',
+  printWidth: 120,
+  endOfLine: 'crlf',
+};

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/satoshi/Satoshi-Variable.ttf");
+}
+.h0 {
+    font-family: "Satoshi";
+    font-size: 84;
+}
+.h1 {
+    font-family: "Satoshi";
+    font-size: 69;
+}
+.h2 {
+    font-family: "Satoshi";
+    font-size: 57;
+}
+.h3 { 
+    font-family: "Satoshi";
+    font-size: 48;
+}
+.h4 {
+    font-family: "Satoshi";
+    font-size: 40;
+}
+.h5 {
+    font-family: "Satoshi";
+    font-size: 33;
+}
+.fs-d {
+    font-family: "Satoshi";
+    font-size: 28;
+}
+.fs-s {
+    font-family: "Satoshi";
+    font-size: 23;
+}
+.fs-s2 {
+    font-family: "Satoshi";
+    font-size: 19;
+}
+.f-body {
+    font-family: "Satoshi";
+    font-size: 16;
+}

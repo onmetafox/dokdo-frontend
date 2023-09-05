@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    background-color: black;
+    font-family: "Satoshi";
+}
+header {
+    background-color: transparent !important;
+    height: 80px;
+}
+.btn {
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn-sm {
+    height: 34px;
+}
+.btn-lg {
+    height: 46px;
+}
+.btn-outline-1{
+    border: solid 1px;
+}
+.btn-outline-2{
+    border: solid 2px;
+}
+.btn-border-p {
+    border-color: #ED5C15;
+}
+
+.p-lr-20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-border-d {
+    border-color: #393A47;
+}
+.small {
+    display: none !important;
+}
+.header {
+    height: 80px;
+}
+.ccenter {
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #FF3D00;
+    width: 6px;
+    height: 6px;
+    transform: translate(150%, 150%);
+    border-radius: 50%;
+  }
+  .loader::before {
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    transform: translate(-150%, -150%);
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  @media (max-width: 420px){
+    header {
+        height: 56px;
+    }
+    .large{
+        display: none !important;
+    }
+    .small {
+        display: flex !important;
+    }
+    
+  }
