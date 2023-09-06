@@ -128,8 +128,6 @@
 .corner-3 {
   font-size: 1em;
   padding: 0.4em;
-  padding-left: 0.8em;
-  padding-right: 0.8em;
   margin-left: 1em;
   margin-right: 1em;
   @include buildCorners(#ffffff, 20px, 1px); // absolute mode: for thin borders you want the border dimensions to be in px

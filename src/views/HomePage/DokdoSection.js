@@ -5,13 +5,13 @@ import dokdoIcon from "../../assets/images/dokdo.svg"
 
 const DokdoSection = () => {
     return <>
-        <Box className="dokdo-section">
+        <Box className="dokdo-section p-tb-80">
             <Container  maxWidth="xl">
                 <Grid container direction="row" alignItems="center" spacing={5}>
-                    <Grid item lg={5} md={12} p={5} className="ta-center">
+                    <Grid item lg={5} md={12} sm={12} xs={12} p={5} className="ta-center">
                         <Box component="img" src={dokdoIcon} style={{width: '80%'}} />
                     </Grid>
-                    <Grid item lg={7} md={12}>
+                    <Grid item lg={7} md={12} sm={12} xs={12}>
                         <Box className="h3 t-p">Dokdo is a business</Box>
                         <Box className="h3 t-p">dedicated to enhancing the</Box>
                         <Box className="h3 t-p fg">Solar Network ecosystem</Box>

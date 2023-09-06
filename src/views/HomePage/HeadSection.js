@@ -38,13 +38,13 @@ const HeadSection = () => {
                                     <Button className="btn-lg btn-s-d p-lr-20" title="Read docs" />
                                 </Stack>
                             </Grid>
-                            <Grid item lg={6} md = {6} sm = {6}>
+                            <Grid item lg={6} md = {6} sm = {6} textAlign="center">
                                 <Box component= "img" src = {circleImg}  style={{width: '80%'}}/>
                             </Grid>
                         </Grid>
                     </Grid>
                     <Box className="logo-container">
-                        <Grid item xs= {12} spacing= {2} justifyContent="center">
+                        <Grid item xs= {12} justifyContent="center">
                             <Box className="fs-24-b t-o mt-20" style={{textAlign:'center'}}>Powering integrations from companies all around the world</Box>
                             <Stack direction="row" spacing={6} useFlexGap flexWrap="wrap" justifyContent='center' className="mt-20">
                                 <Box component="img" src={solarIcon} />

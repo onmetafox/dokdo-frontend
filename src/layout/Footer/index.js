@@ -13,7 +13,7 @@ const Footer = (props) => {
     
     
     return (
-        <Grid container spacing={1}>
+        <Grid container>
             <Grid item sm={12} lg = {6} md={6}>
                 
             </Grid>
