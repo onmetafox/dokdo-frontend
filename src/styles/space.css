@@ -1,0 +1,32 @@
+.ml-10 {
+    margin-left: 1em;
+}
+.mt-20{
+    margin-top: 2em;
+}
+.ta-center{
+    text-align: center;
+}
+.p-20 {
+    padding: 2em;
+}
+.m-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.p-auto{
+    padding-left: auto;
+    padding-right: auto;
+}
+.p-lr-20{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.m-lr-20{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.p-tb-40{
+    padding-top: 4em;
+    padding-bottom: 4em;
+}

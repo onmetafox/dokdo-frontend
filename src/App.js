@@ -6,6 +6,7 @@ import HomePage from './views/HomePage';
 import "./styles/style.css";
 import "./styles/colours.css";
 import "./styles/font.css";
+import './styles/space.css';
 
 function App() {
   return (

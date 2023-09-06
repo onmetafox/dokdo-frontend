@@ -10,7 +10,9 @@
 .bg-d{
     background-color: #2B2C32;
 }
-
+.t-o{
+    color: #C78144;
+}
 .t-p {
     color: #FFFFFF;
 }
@@ -19,6 +21,11 @@
 }
 .t-d {
     color: #868A91; 
+}
+.tg-p {
+    background: -webkit-linear-gradient(30deg, #ED5C15, #FFAF36);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .bg-op {
     background-color: #ED5C15;
@@ -37,4 +44,9 @@
 }
 .bg-gs {
     background: linear-gradient(90deg, #FFAF36, #0047FF, #FF6A3C);
+}
+.fg {
+    background: -webkit-linear-gradient(30deg, #0047FF, #FFAF36,  #FF6A3C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

@@ -1,12 +1,24 @@
-import React, { useContext, useEffect, useMemo } from 'react';
-import { Avatar, Box, Button, Card, CardContent, CardHeader, Grid, Typography, useTheme } from '@mui/material';
-import { makeStyles } from '@mui/styles';
-import { ArrowDropDown, ArrowDropUp, TrendingDown, TrendingUp, UnfoldMore } from '@mui/icons-material';
+import React from 'react';
+import { Container } from '@mui/material';
+import HeadSection from './HeadSection';
+import DokdoSection from './DokdoSection';
+import SolarSection from './SolarSection';
+import ServiceSection from './ServiceSection';
+import ProductSection from './ProductSection';
+import CommunitySection from './CommunitySection';
+import DeveloperSection from './DeveloperSection';
 
 const HomePage = () => {
-    <Box p={2} pt={3}>
-        This is the test of the hompeage
-    </Box>
+    return <>
+        <HeadSection />
+        <DokdoSection />
+        <SolarSection />
+        <ServiceSection />
+        <ProductSection />
+        <CommunitySection />
+        <DeveloperSection />
+    </>
+    
 }
 
 export default HomePage;

@@ -4,41 +4,53 @@
 }
 .h0 {
     font-family: "Satoshi";
-    font-size: 84;
+    font-size: 84px;
 }
 .h1 {
     font-family: "Satoshi";
-    font-size: 69;
+    font-size: 69px;
 }
 .h2 {
     font-family: "Satoshi";
-    font-size: 57;
+    font-size: 57px;
 }
 .h3 { 
     font-family: "Satoshi";
-    font-size: 48;
+    font-size: 48px;
+    font-weight: bold;
 }
 .h4 {
     font-family: "Satoshi";
-    font-size: 40;
+    font-size: 40px;
 }
 .h5 {
     font-family: "Satoshi";
-    font-size: 33;
+    font-size: 33px;
 }
 .fs-d {
     font-family: "Satoshi";
-    font-size: 28;
+    font-size: 28px;
 }
 .fs-s {
     font-family: "Satoshi";
-    font-size: 23;
+    font-size: 23px;
 }
 .fs-s2 {
     font-family: "Satoshi";
-    font-size: 19;
+    font-size: 19px;
 }
 .f-body {
     font-family: "Satoshi";
-    font-size: 16;
+    font-size: 16px;
+}
+
+.fs-24-b {
+    font-family: "Satoshi";
+    font-size: 24px;
+    font-weight: bold;
+}
+.fs-57-b{
+    font-family: "Satoshi";
+    font-size: 57px;
+    font-weight: bold;
 }

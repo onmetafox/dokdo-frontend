@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box,  AppBar, Typography, Container, Toolbar, List, IconButton, ListItem, ListItemButton, ListItemText, Drawer, Grid } from '@mui/material';
+import { Box,  AppBar, Container, Toolbar, List, IconButton, ListItem, ListItemButton, ListItemText, Drawer, Grid } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import Button from 'src/components/Button';
@@ -12,7 +12,7 @@ import ItemMenu from 'src/components/ItemMenu';
 const Header = (props) => {
     const { window } = props;
     const pages = ['Home', 'About us', 'Blog'];
-    const [mobileOpen, setMobileOpen] = React.useState(false);
+    const [mobileOpen, setMobileOpen] = useState(false);
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
     };
@@ -23,7 +23,7 @@ const Header = (props) => {
           <Box component="img"
             src={logoIcon}
           />
-          <List sx={{backgroundColor:'black'}}>
+          <List>
             {pages.map((item) => (
               <ListItem key={item} disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
@@ -39,7 +39,7 @@ const Header = (props) => {
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Grid container direction="row"   justifyContent="space-between"  alignItems="center" spacing={0}>
-                        <Grid item lg = {4} sm = {6} sx = {{display :{lg: 'block'}}}>
+                        <Grid item lg = {4} md = {4} sm = {4} xs = {6} sx = {{display :{sm: 'block'}}}>
                             <Box
                                 sx={{ padding: '5px' }}
                                 component="img"
@@ -47,22 +47,23 @@ const Header = (props) => {
                                 src={logoIcon}
                             />
                         </Grid>
-                        <Grid item lg = {4} sx={{display: {lg: 'flex', sm: 'none'}}}>
+                        <Grid item lg = {4} md = {4} sm = {4} xs={6} sx={{display: {sm: 'flex', xs: 'none'}}}>
                             <Box sx={{ flexGrow: 1, justifyContent:'center', display: { xs: 'none', sm: 'flex' } }}>
                                 {pages.map((page) => (
                                     <ItemMenu
                                         title={page}
-                                        sx={{ my: 2, color: 'white', display: 'block' }}
+                                        className = "f-body"
+                                        active = "Home"
                                     >
                                         {page}
                                     </ItemMenu>
                                 ))}
                             </Box>
                         </Grid>
-                        <Grid item lg={4} sm = {6} justifyContent='flex-end' sx = {{display :{lg: 'flex'}, textAlign:'right'}}>
+                        <Grid item lg = {4} md = {4} sm = {4} xs={6} justifyContent='flex-end' sx = {{display :{lg: 'flex'}, textAlign:'right'}}>
                             <Box sx={{ flexGrow: 1,  justifyContent:'flex-end', alignItems:'center', display:{xs:'flex'} }}>
                                 <Button title="Contact us"  className = "bg-gp t-p btn-sm p-lr-20"/>
-                                <Box sx={{ flexGrow: 0, justifyContent:'flex-end', display: { lg: 'none', sm: 'flex' } }}>
+                                <Box sx={{ flexGrow: 0, justifyContent:'flex-end', display: { sm: 'none', xs: 'flex' } }}>
                                     <nav style={{backgroundColor:'black'}}>
                                         <Drawer
                                             container={container}

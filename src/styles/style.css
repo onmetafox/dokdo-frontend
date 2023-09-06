@@ -12,6 +12,10 @@ header {
     border: none;
     font-size: 16px;
     font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .btn-sm {
     height: 34px;
@@ -19,8 +23,10 @@ header {
 .btn-lg {
     height: 46px;
 }
-.btn-outline-1{
+.btn-s-d{
     border: solid 1px;
+    background-color: black;
+    border-color: #393A47;
 }
 .btn-outline-2{
     border: solid 2px;
@@ -39,6 +45,9 @@ header {
 }
 .small {
     display: none !important;
+}
+.link{
+    padding: 0.8em 0.4em 0.8em 0.4em;
 }
 .header {
     height: 80px;
@@ -76,6 +85,35 @@ header {
     right: 0;
     bottom: 0;
     transform: translate(-150%, -150%);
+  }
+  .head-section{
+    background-image: url("../assets/images/header-bg.svg");
+    background-size: cover;
+    margin-top: -80px;
+    padding-top: 30px;
+  }
+  .dokdo-section{
+    background-image: url("../assets/images/dokdo-bg.svg");
+    background-size: cover;
+    /* min-height: 70em; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .solar-section{
+    background-image: url("../assets/images/solar-bg.svg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 40px;
+  }
+
+  .logo-container {
+    min-height: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
   
   @keyframes rotation {

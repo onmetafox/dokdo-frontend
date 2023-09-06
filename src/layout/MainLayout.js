@@ -27,7 +27,7 @@ const MainLayout = (props) => {
                 <KeyboardArrowUpIcon />
                 </Fab>
             </ScrollTop>
-            {/* <Footer/> */}
+            <Footer/>
         </Box>
     );
 };
