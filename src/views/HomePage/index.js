@@ -1,11 +1,10 @@
 import React from 'react';
-import { Container } from '@mui/material';
 import HeadSection from './HeadSection';
 import DokdoSection from './DokdoSection';
 import SolarSection from './SolarSection';
 import ServiceSection from './ServiceSection';
 import ProductSection from './ProductSection';
-import CommunitySection from './CommunitySection';
+import JoinSection from './JoinSection';
 import DeveloperSection from './DeveloperSection';
 
 const HomePage = () => {
@@ -15,7 +14,7 @@ const HomePage = () => {
         <SolarSection />
         <ServiceSection />
         <ProductSection />
-        <CommunitySection />
+        <JoinSection />
         <DeveloperSection />
     </>
     

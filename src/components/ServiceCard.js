@@ -5,8 +5,7 @@ import cx from 'classnames';
 const ServiceCard = (props) => {
     const {link, image, title, detail } = props.data;
     let classNames;
-    console.log(props.index % 2);
-    if(props.index % 2 == 0 ){
+    if(props.index % 2 === 0 ){
         classNames = cx("service-card", 'm-lr-20' , 'mt-80-m', props.className);
     }else{
         classNames = cx("service-card", 'm-lr-20' , 'mt-80', props.className);

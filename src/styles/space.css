@@ -21,8 +21,8 @@
     margin-bottom: 5px;
 }
 .m-tb-10{
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
 }
 
 .mt-80{
@@ -30,6 +30,9 @@
 }
 .mt-80-m{
     margin-top: -8em !important;
+}
+.m-10{
+    margin: 1em;
 }
 
 .p-20 {
