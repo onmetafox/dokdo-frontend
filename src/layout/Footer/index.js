@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Box,  AppBar, Typography, Container, Toolbar, List, IconButton, ListItem, ListItemButton, ListItemText, Drawer, Grid, Stack } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import { Box, Container, Grid, Stack } from '@mui/material';
 
 import Button from 'src/components/Button';
 
@@ -10,9 +9,7 @@ import Link from 'src/components/Link';
 
 
 
-const Footer = (props) => {
-    
-    
+const Footer = () => {
     return (
         <Box className='footer-section'>
             <Container maxWidth="xl">
