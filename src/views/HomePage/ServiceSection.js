@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Grid, ImageList, ImageListItem } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 
 import ServiceCard from "src/components/ServiceCard";
 

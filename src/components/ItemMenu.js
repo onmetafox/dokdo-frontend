@@ -6,7 +6,7 @@ import "../styles/corners.scss";
 
 const ItemMenu = (props) => {
     let classNames;
-    if(props.title == props.active){
+    if(props.title === props.active){
         classNames = cx("link", 'corner-3', props.className);
     }else{
         classNames = cx("link", props.className);

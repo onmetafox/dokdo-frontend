@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Grid, Stack } from "@mui/material";
+import { Box, Container, Grid  } from "@mui/material";
 
 import SolarCard from "src/components/SolarCard";
 

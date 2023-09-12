@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Fab } from '@mui/material';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { Outlet } from 'react-router-dom';
@@ -6,15 +6,15 @@ import { Box } from '@mui/system';
 
 import Header from './Header';
 import Footer from './Footer'
-import LoadingScreen from 'src/components/LoadingScreen';
+// import LoadingScreen from 'src/components/LoadingScreen';
 import ScrollTop from 'src/components/ScrollTop';
 
 import "../styles/style.css";
 const MainLayout = (props) => {
   
-    const [loading, setLoading] = useState(false);
+    // const [loading, setLoading] = useState(false);
 
-    if (loading) return <LoadingScreen />;
+    // if (loading) return <LoadingScreen />;
 
     return (
         <Box className = "body">
