@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rm -rf ../dokdo_frontend/public/* && (mv build/* ../dokdo_frontend/public || move build/* ../dokdo_frontend/public) && rm -rf build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepack": "husky install"
