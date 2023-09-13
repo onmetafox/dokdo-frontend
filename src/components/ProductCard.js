@@ -20,7 +20,7 @@ const ProductCard = (props) => {
                     <Button className = "product-button m-tb-10" title= {button}/>
                     <Box className= "t-p h5 m-tb-10"> {title} </Box>
                     <Box className= "t-p m-tb-10"> {detail} </Box>
-                    <Link href= "github.com" className="t-o no-line" title="Read more" icon={true} />
+                    <Link href= "github.com" className="t-o no-line" title="Read more" icon={true} status="active"/>
                 </Grid>
             </>
             )}
@@ -29,7 +29,7 @@ const ProductCard = (props) => {
                     <Button className = "product-button m-tb-10" title= {button}/>
                     <Box className= "t-p h5 m-tb-10"> {title} </Box>
                     <Box className= "t-p m-tb-10"> {detail} </Box>
-                    <Link href= "github.com" className="t-o no-line" title="Read more" icon={true} />
+                    <Link href= "github.com" className="t-o no-line" title="Read more" icon={true} status="active" />
                 </Grid>
                 <Grid item lg={6}>
                     <Box component="img" src={image} sx={{width:'80%', marginLeft:2}}></Box>

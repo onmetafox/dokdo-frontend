@@ -1,29 +1,38 @@
-import defaultIcon from "../assets/images/default.svg"; 
-import districtIcon  from "../assets/images/district.svg";
-import tymtIcon from "../assets/images/tymt.svg";
-import solarIcon from "../assets/images/solar.svg";
+import service1Icon from "../assets/images/service1.png";
+import service2Icon from "../assets/images/service2.png";
+import service3Icon from "../assets/images/service3.png";
+import service4Icon from "../assets/images/service4.png";
+
+import solar1Icon from "../assets/images/solar1.png"
+import solar2Icon from "../assets/images/solar2.png"
+import solar3Icon from "../assets/images/solar3.png"
+import solar4Icon from "../assets/images/solar4.png"
+
+import districtIcon  from "../assets/images/district.png";
+import tymtIcon from "../assets/images/tymt.png";
+import solarIcon from "../assets/images/solar.png";
 import twiterIcon from "../assets/icons/twitter.svg";
 import tgIcon from "../assets/icons/tg.svg";
 import discordIcon from "../assets/icons/discord.svg";
 import gitIcon from "../assets/icons/github.svg";
 export const solarData = [
     {
-        image: defaultIcon,
+        image: solar1Icon,
         title:"Consensus",
         detail: "Some generals may be traitors trying to confuse the others (faulty or maliciouse nodes)"
     },
     {
-        image: defaultIcon,
+        image: solar2Icon,
         title:"Fast & Secure",
         detail: "Some generals may be traitors trying to confuse the others (faulty or maliciouse nodes)"
     },
     {
-        image: defaultIcon,
+        image: solar3Icon,
         title:"Fast & Secure",
         detail: "Some generals may be traitors trying to confuse the others (faulty or maliciouse nodes)"
     },
     {
-        image: defaultIcon,
+        image: solar4Icon,
         title:"Consensus",
         detail: "Some generals may be traitors trying to confuse the others (faulty or maliciouse nodes)"
     }
@@ -32,25 +41,25 @@ export const solarData = [
 export const serviceData = [
     {
         link:"Connect",
-        image: defaultIcon,
+        image: service1Icon,
         title: "Decentralised Application",
         detail: "Grow the economy of your chain by connecting to Cosmos Hub services using IBC protocol."
     },
     {
         link:"Connect",
-        image: defaultIcon,
+        image: service2Icon,
         title: "Decentralised Application",
         detail: "Grow the economy of your chain by connecting to Cosmos Hub services using IBC protocol."
     },
     {
         link:"Connect",
-        image: defaultIcon,
+        image: service3Icon,
         title: "Decentralised Application",
         detail: "Grow the economy of your chain by connecting to Cosmos Hub services using IBC protocol."
     },
     {
         link:"Connect",
-        image: defaultIcon,
+        image: service4Icon,
         title: "Decentralised Application",
         detail: "Grow the economy of your chain by connecting to Cosmos Hub services using IBC protocol."
     }

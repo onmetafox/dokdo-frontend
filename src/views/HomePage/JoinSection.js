@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid, Container } from "@mui/material";
-import joinIcon from "../../assets/images/join.svg"
+import joinIcon from "../../assets/images/join.png"
 
 import  { joinData } from "../../config/const";
 

@@ -1,7 +1,7 @@
 import { Box, Container, Divider, Grid, Stack } from "@mui/material";
 import React from "react";
 
-import dokdoIcon from "../../assets/images/dokdo.svg"
+import dokdoIcon from "../../assets/images/dokdo.png"
 
 const DokdoSection = () => {
     return <>

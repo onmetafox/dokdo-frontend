@@ -6,6 +6,8 @@ body{
 header {
     background-color: transparent !important;
     height: 80px;
+    box-shadow: none !important;
+
 }
 .btn {
     border-radius: 8px;
@@ -35,6 +37,12 @@ header {
 }
 .btn-lg {
     height: 46px;
+}
+.anim-circle{
+  width: 70%;
+  position: absolute;
+  right: 15%;
+  top: 0;
 }
 .btn-s-d{
     border: solid 1px;
@@ -120,13 +128,14 @@ header {
   transform: translate(-150%, -150%);
 }
 .head-section{
-  background-image: url("../assets/images/header-bg.svg");
+  background-image: url("../assets/images/header-lg-bg.png");
   background-size: cover;
-  margin-top: -80px;
-  padding-top: 80px;
+  /* align-items: center; */
+  display: flex;
+  min-height: 900px;
 }
 .dokdo-section{
-  background-image: url("../assets/images/dokdo-bg.svg");
+  background-image: url("../assets/images/dokdo-bg.png");
   background-size: cover;
   min-height: 700px;
   justify-content: center;
@@ -134,7 +143,7 @@ header {
   display: flex;
 }
 .solar-section{
-  background-image: url("../assets/images/solar-bg.svg");
+  background-image: url("../assets/images/solar-bg.png");
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -153,16 +162,16 @@ header {
   display: flex;
 }
 .join-section{
-  background-image: url("../assets/images/join-bg.svg");
+  background-image: url("../assets/images/join-bg.png");
   background-size: cover;
 }
 .footer-section {
-  background-image: url("../assets/images/footer-bg.svg");
+  background-image: url("../assets/images/footer-bg.png");
   background-size: cover;
   padding-top: 3em;
 }
 .product-card {
-  background-image: url("../assets/images/product-card-bg.svg");
+  background-image: url("../assets/images/product-card-bg.png");
   background-size: cover;
   border-radius: 12px;
   padding: 5em;
@@ -173,7 +182,7 @@ header {
   box-shadow: 0 0 10px #232222
 }
 .dev-card {
-  background-image: url("../assets/images/developer.svg");
+  background-image: url("../assets/images/developer.png");
   background-size: cover;
 }
 .product-button{
@@ -198,7 +207,9 @@ header {
   max-width: 270px;
 }
 .service-card{
-  background-image: url("../assets/images/service-card-bg.svg");
+  background-image: url("../assets/images/service-card-bg.png");
+  background-color: #0b0b0b;
+  border-radius: 12px;
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -206,10 +217,11 @@ header {
   text-align: left;
   padding: 50px;
   padding-top: 40px;
-  margin:5px;
+  margin-left:20px !important;
   min-height: 465px;
   max-width: 380px !important;
   border-radius: 12;
+  box-shadow: 0 0 20px #232222
 }
 
 .logo-container {

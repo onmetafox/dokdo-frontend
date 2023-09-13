@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Box,  AppBar, Container, Toolbar, List, IconButton, ListItem, ListItemButton, ListItemText, Drawer, Grid } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
+import { GlobalContext } from 'src/providers/GlobalProvider';
 import Button from 'src/components/Button';
 
 import logoIcon from "../../assets/images/logo.svg"
@@ -10,6 +11,7 @@ import ItemMenu from 'src/components/ItemMenu';
 
 
 const Header = (props) => {
+    const { activeMenu } = useContext(GlobalContext);
     const { window } = props;
     const pages = ['Home', 'About us', 'Blog'];
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -35,7 +37,7 @@ const Header = (props) => {
         </Box>
     );
     return (
-        <AppBar position="static">
+        <AppBar position="fixed">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Grid container direction="row"   justifyContent="space-between"  alignItems="center" spacing={0}>
@@ -53,7 +55,7 @@ const Header = (props) => {
                                     <ItemMenu
                                         title={page}
                                         className = "f-body m-lr-10"
-                                        active = "Home"
+                                        active = {activeMenu}
                                         key = {key}
                                     >
                                         {page}
