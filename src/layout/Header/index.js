@@ -1,19 +1,15 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { Box,  AppBar, Container, Toolbar, List, IconButton, ListItem, ListItemButton, ListItemText, Drawer, Grid } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import { GlobalContext } from 'src/providers/GlobalProvider';
 import Button from 'src/components/Button';
 
 import logoIcon from "../../assets/images/logo.svg"
 import ItemMenu from 'src/components/ItemMenu';
-
-
+import routes from 'src/routes';
 
 const Header = (props) => {
-    const { activeMenu } = useContext(GlobalContext);
     const { window } = props;
-    const pages = ['Home', 'About us', 'Blog'];
     const [mobileOpen, setMobileOpen] = useState(false);
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
@@ -26,10 +22,10 @@ const Header = (props) => {
             src={logoIcon}
           />
           <List>
-            {pages.map((item, key) => (
+            {routes.map(({title, href}, key) => (
               <ListItem key={key} disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
-                  <ListItemText primary={item} />
+                  <ListItemText primary={title} />
                 </ListItemButton>
               </ListItem>
             ))}
@@ -51,14 +47,13 @@ const Header = (props) => {
                         </Grid>
                         <Grid item lg = {8} md = {8} sm = {8} xs={6} sx={{display: {sm: 'flex', xs: 'none'}}}>
                             <Box sx={{ flexGrow: 1, justifyContent:'center', display: { xs: 'none', sm: 'flex' } }}>
-                                {pages.map((page, key) => (
+                                {routes.map(({title, href}, key) => (
                                     <ItemMenu
-                                        title={page}
                                         className = "f-body m-lr-10"
-                                        active = {activeMenu}
+                                        href={href}
                                         key = {key}
                                     >
-                                        {page}
+                                        {title}
                                     </ItemMenu>
                                 ))}
                             </Box>

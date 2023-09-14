@@ -1,12 +1,27 @@
 import React, { createContext, useState, useMemo, useCallback } from "react";
-import { Outlet } from 'react-router-dom';
+
+
 export const GlobalContext = createContext({
-    activeMenu: "Home",
-    setActiveMenu: ()=>{},
+    theme: 'dark',
+    toggleTheme: (theme)=>{},
 });
 
-export default function GlobalProvider (props) {
-    const [activeMenu, setActiveMenu] = useState("Home");
-    const globals = useMemo(()=> ()=>({activeMenu, setActiveMenu}), [activeMenu,setActiveMenu])
-    return <GlobalContext.Provider value={globals}><Outlet />{props.children}</GlobalContext.Provider>
+const initTheme = localStorage.getItem('_theme_') || 'dark';
+
+export default function GlobalProvider ({children}) {
+    const [theme, setTheme] = useState(initTheme);
+
+    const toggleTheme = useCallback(() => {
+        setTheme(prev => {
+            const newTheme = prev === 'dark' ? 'light': 'dark';
+            localStorage.setItem('_theme_', newTheme);
+            return newTheme;
+        })
+    }, []);
+
+    const globals = useMemo(()=> {
+        return { theme, toggleTheme }
+    }, [theme,toggleTheme]);
+
+    return <GlobalContext.Provider value={globals}>{children}</GlobalContext.Provider>
 }

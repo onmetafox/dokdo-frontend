@@ -1,115 +1,137 @@
-body{
-    margin: 0;
-    background-color: black;
-    font-family: "Satoshi";
+body {
+  margin: 0;
+  background-color: black;
+  font-family: "Satoshi";
 }
+
 header {
-    background-color: transparent !important;
-    height: 80px;
-    box-shadow: none !important;
+  background-color: transparent !important;
+  height: 80px;
+  box-shadow: none !important;
 
 }
+
 .btn {
-    border-radius: 8px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    color: #FFFFFF;
-    padding-left: 15px;
-    padding-right: 15px;
-    min-width: 150px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 150px;
 }
+
 .no-line {
   text-decoration: none;
 }
-.ext-link{
-    border-radius: 8px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    color: #FFFFFF;
-    padding-right: 5px;
+
+.ext-link {
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  padding-right: 5px;
 }
+
 .btn-sm {
-    height: 34px;
+  height: 34px;
 }
+
 .btn-lg {
-    height: 46px;
+  height: 46px;
 }
-.anim-circle{
+
+.anim-circle {
   width: 70%;
   position: absolute;
   right: 15%;
   top: 0;
 }
-.btn-s-d{
-    border: solid 1px;
-    background-color: black;
-    border-color: #393A47;
+
+.btn-s-d {
+  border: solid 1px;
+  background-color: black;
+  border-color: #393A47;
 }
-.btn-outline-2{
-    border: solid 2px;
+
+.btn-outline-2 {
+  border: solid 2px;
 }
+
 .btn-border-p {
-    border-color: #ED5C15;
+  border-color: #ED5C15;
 }
+
 .input {
   background-color: #1A1B23;
-  min-width: 24em;
   border-radius: 8px;
   border-color: #393A47;
   padding: 10px;
   min-height: 25px;
 }
+
 ::placeholder {
   color: white;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: white;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
- color: white;
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
 }
 
-.p-lr-20{
-    padding-left: 20px;
-    padding-right: 20px;
+.p-lr-20 {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .btn-border-d {
-    border-color: #393A47;
+  border-color: #393A47;
 }
+
 .small {
-    display: none !important;
+  display: none !important;
 }
-.link{
-    padding: 0.4em 1em 0.4em 1em;
+
+.link {
+  padding: 0.4em 1em 0.4em 1em;
+  text-decoration: none;
+  color: white;
 }
+
 .header {
-    height: 80px;
+  height: 80px;
 }
+
 .ccenter {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
+
 .loader {
-    width: 48px;
-    height: 48px;
-    border: 2px solid #FFF;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite;
-  }
+  width: 48px;
+  height: 48px;
+  border: 2px solid #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
 .loader::after,
 .loader::before {
-  content: '';  
+  content: '';
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -120,6 +142,7 @@ header {
   transform: translate(150%, 150%);
   border-radius: 50%;
 }
+
 .loader::before {
   left: auto;
   top: auto;
@@ -127,14 +150,16 @@ header {
   bottom: 0;
   transform: translate(-150%, -150%);
 }
-.head-section{
+
+.head-section {
   background-image: url("../assets/images/header-lg-bg.png");
   background-size: cover;
   /* align-items: center; */
   display: flex;
   min-height: 900px;
 }
-.dokdo-section{
+
+.dokdo-section {
   background-image: url("../assets/images/dokdo-bg.png");
   background-size: cover;
   min-height: 700px;
@@ -142,50 +167,98 @@ header {
   align-items: center;
   display: flex;
 }
-.solar-section{
+.contact-section {
+  background-image: url("../assets/images/contact-bg.png");
+  background-size: cover;
+  min-height: 700px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.about-section {
+  background-image: url("../assets/images/about-bg.png");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.about-card{
+  text-align: left;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column !important;
+  width: fit-content;
+  justify-content: initial;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.contact-box {
+  margin: 1em;
+  padding: 4em;
+  border-radius: 0.8em;
+  background-color: #0b0b0f;
+  .input{
+    margin: 1em;
+    width: 90%;
+  }
+  .btn {
+    margin: 1em;
+  }
+}
+.solar-section {
   background-image: url("../assets/images/solar-bg.png");
   background-size: cover;
   justify-content: center;
   align-items: center;
   display: flex;
 }
-.service-section{
+
+.service-section {
   background-image: url("../assets/images/service-bg.svg");
   background-size: cover;
   justify-content: center;
   align-items: center;
   display: flex;
 }
-.product-section{
+
+.product-section {
   justify-content: center;
   align-items: center;
   display: flex;
 }
-.join-section{
+
+.join-section {
   background-image: url("../assets/images/join-bg.png");
   background-size: cover;
 }
+
 .footer-section {
   background-image: url("../assets/images/footer-bg.png");
   background-size: cover;
   padding-top: 3em;
 }
+
 .product-card {
   background-image: url("../assets/images/product-card-bg.png");
   background-size: cover;
   border-radius: 12px;
   padding: 5em;
 }
+
 .common-card {
   border-radius: 1.2em;
   padding: 2em;
   box-shadow: 0 0 10px #232222
 }
+
 .dev-card {
   background-image: url("../assets/images/developer.png");
   background-size: cover;
 }
-.product-button{
+
+.product-button {
   padding: 10px;
   border-radius: 24px;
   color: #C78144;
@@ -193,7 +266,8 @@ header {
   background-color: #1A1B23;
   border: solid 1px;
 }
-.solar-card{
+
+.solar-card {
   background-image: url("../assets/images/solar-card-bg.svg");
   background-size: cover;
   justify-content: center;
@@ -202,11 +276,12 @@ header {
   text-align: left;
   padding: 20px;
   padding-top: 40px;
-  margin:5px;
+  margin: 5px;
   min-height: 254px;
   max-width: 270px;
 }
-.service-card{
+
+.service-card {
   background-image: url("../assets/images/service-card-bg.png");
   background-color: #0b0b0b;
   border-radius: 12px;
@@ -217,7 +292,7 @@ header {
   text-align: left;
   padding: 50px;
   padding-top: 40px;
-  margin-left:20px !important;
+  margin-left: 20px !important;
   min-height: 465px;
   max-width: 380px !important;
   border-radius: 12;
@@ -235,20 +310,23 @@ header {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
-} 
+}
 
-@media (max-width: 420px){
+@media (max-width: 420px) {
   header {
-      height: 56px;
+    height: 56px;
   }
-  .large{
-      display: none !important;
+
+  .large {
+    display: none !important;
   }
+
   .small {
-      display: flex !important;
+    display: flex !important;
   }
-  
+
 }

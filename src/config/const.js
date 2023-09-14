@@ -15,6 +15,8 @@ import twiterIcon from "../assets/icons/twitter.svg";
 import tgIcon from "../assets/icons/tg.svg";
 import discordIcon from "../assets/icons/discord.svg";
 import gitIcon from "../assets/icons/github.svg";
+
+import aboutImg from "../assets/images/about.png";
 export const solarData = [
     {
         image: solar1Icon,
@@ -120,5 +122,36 @@ export const developerData = [
         title: "Whitepaper",
         detail: "Have technical questions about tools? Ask a developer on the Community Discord",
         link: "Github.com"
+    }
+]
+
+export const aboutData = [
+    {
+        image: aboutImg,
+        title: "Nick",
+        detail: "Developer",
+        link: "Github link/Twitter",
+        href: "github.com"
+    },
+    {
+        image: aboutImg,
+        title: "Nick",
+        detail: "Developer",
+        link: "Github link/Twitter",
+        href: "github.com"
+    },
+    {
+        image: aboutImg,
+        title: "Nick",
+        detail: "Developer",
+        link: "Github link/Twitter",
+        href: "github.com"
+    },
+    {
+        image: aboutImg,
+        title: "Nick",
+        detail: "Developer",
+        link: "Github link/Twitter",
+        href: "github.com"
     }
 ]

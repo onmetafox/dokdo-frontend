@@ -51,10 +51,14 @@
     padding-left: 1em;
     padding-right: 1em;
 }
-
-.p-tb-40{
+.p-tb-20{
     padding-top: 4em;
     padding-bottom: 4em;
+}
+
+.p-tb-20{
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .p-tb-80{
