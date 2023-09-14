@@ -16,6 +16,9 @@
 .mt-20{
     margin-top: 2em !important;
 }
+.mt-40{
+    margin-top: 40px !important;
+}
 .m-tb-5{
     margin-top: 5px;
     margin-bottom: 5px;
@@ -69,12 +72,23 @@
 .ta-center{
     text-align: center;
 }
-
-@media(max-width: 807px){
-    .mt-80{
-        margin-top: 0em !important;
+@media (max-width:1200px) {
+    .about-section{
+        .mt-80{
+            margin-top: 0em !important;
+        }
+        .mt-80-m{
+            margin-top: 0em !important;
+        }
     }
-    .mt-80-m{
-        margin-top: 0em !important;
+}
+@media(max-width: 847px){
+    .service-section {
+        .mt-80{
+            margin-top: 2em !important;
+        }
+        .mt-80-m{
+            margin-top: 2em !important;
+        }
     }
 }

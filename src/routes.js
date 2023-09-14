@@ -15,12 +15,12 @@ const routes = [
         component: AboutPage,
         children: []
     },
-    {
-        title: 'Blog',
-        href: '/blog',
-        component: () => <>Blog</>,
-        children: []
-    },
+    // {
+    //     title: 'Blog',
+    //     href: '/blog',
+    //     component: () => <>Blog</>,
+    //     children: []
+    // },
     {
         title: 'Contact us',
         href: '/contact',

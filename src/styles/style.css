@@ -155,12 +155,10 @@ header {
   background-image: url("../assets/images/header-lg-bg.png");
   background-size: cover;
   /* align-items: center; */
-  display: flex;
-  min-height: 900px;
 }
 
 .dokdo-section {
-  background-image: url("../assets/images/dokdo-bg.png");
+  background-image: url("../assets/images/dokdo-lg-bg.png");
   background-size: cover;
   min-height: 700px;
   justify-content: center;
@@ -208,7 +206,7 @@ header {
   }
 }
 .solar-section {
-  background-image: url("../assets/images/solar-bg.png");
+  background-image: url("../assets/images/solar-lg-bg.png");
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -216,7 +214,7 @@ header {
 }
 
 .service-section {
-  background-image: url("../assets/images/service-bg.svg");
+  background-image: url("../assets/images/service-lg-bg.svg");
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -230,7 +228,7 @@ header {
 }
 
 .join-section {
-  background-image: url("../assets/images/join-bg.png");
+  background-image: url("../assets/images/join-lg-bg.png");
   background-size: cover;
 }
 
@@ -295,7 +293,6 @@ header {
   margin-left: 20px !important;
   min-height: 465px;
   max-width: 380px !important;
-  border-radius: 12;
   box-shadow: 0 0 20px #232222
 }
 
@@ -315,8 +312,49 @@ header {
     transform: rotate(360deg);
   }
 }
+@media (max-width:900px) {
+  .head-section{
+    background-image: url("../assets/images/header-md-bg.png");
+  }
+  .dokdo-section{
+    background-image: url("../assets/images/dokdo-md-bg.png");
+  }
+  .solar-section{
+    background-image: url("../assets/images/solar-md-bg.png");
+  }
+  .join-section {
+    background-image: url("../assets/images/join-md-bg.png");
+  }
+  
+  .service-section {
+    background-image: url("../assets/images/service-md-bg.png");
+  }
+  .footer-section{
+    background-image: url("../assets/images/footer-md-bg.png");
+  }
+}
+@media (max-width:600px) {
+  .head-section{
+    background-image: url("../assets/images/header-sm-bg.png");
+  }
+  .dokdo-section{
+    background-image: url("../assets/images/dokdo-sm-bg.png");
+  }
+  .solar-section{
+    background-image: url("../assets/images/solar-sm-bg.png");
+  }
+  .join-section {
+    background-image: url("../assets/images/join-sm-bg.png");
+  }
+  .service-section {
+    background-image: url("../assets/images/service-sm-bg.png");
+  }
+  .footer-section{
+    background-image: url("../assets/images/footer-sm-bg.png");
+  }
+}
+@media (max-width: 400px) {
 
-@media (max-width: 420px) {
   header {
     height: 56px;
   }
