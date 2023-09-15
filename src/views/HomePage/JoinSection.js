@@ -14,7 +14,7 @@ const JoinSection = () => {
             </Grid>
             <Grid item lg = {6} md= {6} sm = {12} xs={12} >
                 {joinData.map((item, index) => (
-                    <CommonCard data={item} index = {index} key = {index}/>
+                    <CommonCard data={item} index = {index} key = {index} sx={{width:'auto'}}/>
                 ))}
             </Grid>
         </Grid>

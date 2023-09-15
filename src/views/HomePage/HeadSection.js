@@ -10,7 +10,9 @@ import jumpIcon from "../../assets/logos/jump.svg";
 import gateIcon from "../../assets/logos/gateio.svg";
 
 import circleImg from "../../assets/images/circle.png"
+
 import Button from "src/components/Button";
+import AnimComp from "src/components/AnimCmp";
 
 const HeadSection = () => {
 
@@ -39,7 +41,8 @@ const HeadSection = () => {
                                 </Stack>
                             </Grid>
                             <Grid item lg={6} md = {6} sm = {6} textAlign="center">
-                                <Box component= "img" src = {circleImg}  style={{width: '80%'}}/>
+                                {/* <Box component= "img" src = {circleImg}  style={{width: '80%'}}/> */}
+                                <AnimComp />
                             </Grid>
                         </Grid>
                     </Grid>

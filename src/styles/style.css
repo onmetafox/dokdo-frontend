@@ -302,15 +302,16 @@ header {
   align-items: center;
   display: flex;
 }
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
+.img-rotate{
+  animation: rotateImg 7s linear infinite;
+}
+@keyframes rotateImg{
+  from {
+   transform: rotate(0deg);
   }
-
-  100% {
-    transform: rotate(360deg);
-  }
+ to {
+  transform: rotate(359deg);
+ }
 }
 @media (max-width:900px) {
   .head-section{

@@ -13,7 +13,7 @@ const DeveloperSection = () => {
                     <Grid container direction="row" justifyContent="center" alignItems="center" spacing={5}>
                         {developerData.map((item, index) => (
                             <Grid item xs = {12} sm={12} md ={6} lg={6} key={index} >
-                                <CommonCard data={item}  className="dev-card"/>
+                                <CommonCard data={item}  className="dev-card" sx={{width:'auto'}}/>
                             </Grid>
                         ))}
                     </Grid>
