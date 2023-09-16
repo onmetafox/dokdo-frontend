@@ -9,7 +9,6 @@ import googleIcon from "../../assets/logos/google.svg";
 import jumpIcon from "../../assets/logos/jump.svg";
 import gateIcon from "../../assets/logos/gateio.svg";
 
-import circleImg from "../../assets/images/circle.png"
 
 import Button from "src/components/Button";
 import AnimComp from "src/components/AnimCmp";
