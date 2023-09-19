@@ -9,7 +9,7 @@ const Link = (props) => {
     let classNames = cx("ext-link", className)
     return (
         <Stack direction='row' spacing={2}>
-            <a href = {href} className = {classNames}>{title}</a>
+            <a href = {href} className = {classNames} target='_blank' rel="noreferrer">{title}</a>
             {icon && status==="active" && (
                 <img src={linkActiveIcon} alt='link' />
             )}

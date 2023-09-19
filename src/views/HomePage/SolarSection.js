@@ -13,7 +13,7 @@ const SolarSection = () => {
                     <Box className="h3 t-p"> Solar(SXP) Blockchain</Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <Box className="fs-2 t-p p-20" maxWidth={640}>Solar is a decentralised blockchain using a Delegated Proof of Stake consensus model which is secured by 53 elected block producers that produce blocks and validate transactions.</Box>
+                    <Box className="fs-2 t-p p-20" maxWidth={640}>A decentralized blockchain utilizing a Delegated Proof of Stake consensus model</Box>
                 </Grid>
                 <Grid item xs={12} >
                     <Grid container>

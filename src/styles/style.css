@@ -24,17 +24,19 @@ header {
 }
 
 .no-line {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .ext-link {
   border-radius: 8px;
   border: none;
-  font-size: 16px;
+  font-size: 16px !important;
   font-weight: bold;
   text-align: center;
   color: #FFFFFF;
   padding-right: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .btn-sm {
@@ -105,7 +107,7 @@ header {
 
 .link {
   padding: 0.4em 1em 0.4em 1em;
-  text-decoration: none;
+  text-decoration: none !important;
   color: white;
 }
 
@@ -200,6 +202,7 @@ header {
   .input{
     margin: 1em;
     width: 90%;
+    color: white;
   }
   .btn {
     margin: 1em;

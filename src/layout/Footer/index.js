@@ -1,11 +1,11 @@
 import React from 'react';
-import { Box, Container, Grid, Stack } from '@mui/material';
+import { Box, Container, Grid, Stack, Link } from '@mui/material';
 
 import Button from 'src/components/Button';
 
 import logoIcon from "../../assets/images/logo.svg"
 import Input from 'src/components/Input';
-import Link from 'src/components/Link';
+import ExternalLink from 'src/components/Link';
 
 
 
@@ -37,35 +37,35 @@ const Footer = () => {
                             
                         <Grid container>
                             <Grid item xs={4}>
-                                <Link icon={false} title="Home" href="/" className="t-p t-body no-line m-tb-10" />
+                                <Link  href="/home" className="ext-link t-p t-body no-line m-tb-10">Home</Link>
                             </Grid>
                             <Grid item xs={4}>
-                                <Link icon={false} title="Telegram" href="/" className="t-p t-body no-line m-tb-10" />
+                                <ExternalLink icon={false} title="Telegram" href="https://t.me/dokdo_official" className="t-p t-body no-line m-tb-10" />
                             </Grid>
                             <Grid item xs={4}>
-                                <Link icon={false} title="Github" href="/" className="t-p t-body no-line m-tb-10" />
-                            </Grid>
-                        </Grid>
-                        <Grid container>
-                            <Grid item xs={4}>
-                                <Link icon={false} title="About" href="/" className="t-p t-body no-line m-tb-10" />
-                            </Grid>
-                            <Grid item xs={4}>
-                                <Link icon={false} title="Twitter" href="/" className="t-p t-body no-line m-tb-10" />
-                            </Grid>
-                            <Grid item xs={4}>
-                                <Link icon={false} title="Whitepaper" href="/" className="t-p t-body no-line m-tb-10" />
+                                <ExternalLink icon={false} title="Github" href="/" className="t-p t-body no-line m-tb-10" />
                             </Grid>
                         </Grid>
                         <Grid container>
                             <Grid item xs={4}>
-                                <Link icon={false} title="Contact us" href="/" className="t-p t-body no-line m-tb-10" />
+                                <Link href="/about" className="ext-link t-p t-body no-line m-tb-10">About us</Link>
                             </Grid>
                             <Grid item xs={4}>
-                                <Link icon={false} title="Discord" href="/" className="t-p t-body no-line m-tb-10" />
+                                <ExternalLink icon={false} title="Twitter" href="https://twitter.com/dokdo_sh" className="t-p t-body no-line m-tb-10" />
                             </Grid>
                             <Grid item xs={4}>
-                                <Link icon={true} status="inactive" title="Blog" href="/" className="t-p t-body no-line m-tb-10" />
+                                <ExternalLink icon={false} title="Whitepaper" href="" className="t-p t-body no-line m-tb-10" />
+                            </Grid>
+                        </Grid>
+                        <Grid container>
+                            <Grid item xs={4}>
+                                <Link title="Contact us" href="/contact" className="ext-link t-p t-body no-line m-tb-10">Contact us</Link>
+                            </Grid>
+                            <Grid item xs={4}>
+                                <ExternalLink icon={false} title="Discord" href="" className="t-p t-body no-line m-tb-10" />
+                            </Grid>
+                            <Grid item xs={4}>
+                                <ExternalLink icon={true} status="inactive" title="Blog" href="https://medium.com/@dokdo_sh" className="t-p t-body no-line m-tb-10" />
                             </Grid>
                         </Grid>
                     </Grid>

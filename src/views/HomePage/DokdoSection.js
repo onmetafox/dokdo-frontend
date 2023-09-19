@@ -19,11 +19,20 @@ const DokdoSection = () => {
                             Our goal is to contribute to the grwth and development of the Solar Network by providing innovative solutions, dApps and services.
                         </Box>
                         <Stack direction="row" sx={{display: {lg: "flex", md: 'flex', sm: 'flex', xs: 'block'}, textAlign:'center'}} justifyContent='flex-start' alignItems="center">
-                            <Box className="fs-57-b t-p">1700% +</Box>
-                            <Divider orientation="vertical" variant="middle" light = {true} sx={{marginLeft:5, marginRight:5, color:"white"}} flexItem />
-                            <Box className="fs-57-b t-p">5M +</Box>
-                            <Divider orientation="vertical" variant="middle" light = {true} sx={{marginLeft:5, marginRight:5, color:"white"}} flexItem/>
-                            <Box className="fs-57-b t-p">80 +</Box>
+                            <Stack direction="column">
+                                <Box className="fs-57-b t-p">8 years</Box>
+                                <Box className="t-s"> of experience in crypto space</Box>
+                            </Stack>
+                            <Divider orientation="vertical" variant="middle" light = {true} sx={{marginLeft:5, marginRight:5, borderColor:"#393A47"}} flexItem />
+                            <Stack direction="column">
+                                <Box className="fs-57-b t-p">1K+</Box>
+                                <Box className="t-s">Community</Box>
+                            </Stack>
+                            <Divider orientation="vertical" variant="middle" light = {true} sx={{marginLeft:5, marginRight:5,  borderColor:"#393A47"}} flexItem/>
+                            <Stack direction="column">
+                                <Box className="fs-57-b t-p">04</Box>
+                                <Box className="t-s">products in development</Box>
+                            </Stack>
                         </Stack>
                     </Grid>
                 </Grid>

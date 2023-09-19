@@ -9,8 +9,7 @@ import googleIcon from "../../assets/logos/google.svg";
 import jumpIcon from "../../assets/logos/jump.svg";
 import gateIcon from "../../assets/logos/gateio.svg";
 
-
-import Button from "src/components/Button";
+import Link from "src/components/Link";
 import AnimComp from "src/components/AnimCmp";
 
 const HeadSection = () => {
@@ -35,12 +34,10 @@ const HeadSection = () => {
                                 <TextTransition className = "h1 t-o" style={{color:"#ED5C15", display: 'flex', justifyContent: 'center'}} springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
                                 <Box className="fs-s2 t-p mt-20">Dokdo is a business dedicated to enhancing the Solar Network ecosystem.</Box>
                                 <Stack direction="row" className="mt-20" sx={{textAlign:'center'}} spacing={2}>
-                                    <Button className="btn-lg bg-gp p-lr-20" title="Join community" />
-                                    <Button className="btn-lg btn-s-d p-lr-20" title="Read docs" />
+                                    <Link href="https://t.me/dokdo_official" icon={false} className="btn-lg bg-gp p-lr-20 no-line" title="Join community" />
                                 </Stack>
                             </Grid>
                             <Grid item lg={6} md = {6} sm = {6} textAlign="center">
-                                {/* <Box component= "img" src = {circleImg}  style={{width: '80%'}}/> */}
                                 <AnimComp />
                             </Grid>
                         </Grid>

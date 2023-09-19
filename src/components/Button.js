@@ -2,12 +2,11 @@ import React from 'react'
 import Stack from '@mui/material/Stack';
 import cx from "classnames";
 
-const Button = (props) => {
-    const {title, className} = props;
+const Button = ({title, className, handler}) => {
     let classNames = cx("btn", className)
     return (
         <Stack direction='row' spacing={2}>
-            <button className = {classNames}>{title}</button>
+            <button onClick={handler} className = {classNames}>{title}</button>
         </Stack>
     )
 }

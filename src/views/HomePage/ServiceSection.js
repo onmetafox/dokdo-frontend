@@ -16,7 +16,7 @@ const ServiceSection = () => {
                     <Box className="fs-2 t-p p-20" maxWidth={640}>The Solar Blockchain provides the end-user with rich libraries and tools to develop projects on the blockchain for many usecases.</Box>
                 </Grid>
                 <Grid item xs = {6}>
-                    <Grid container direction="row" justifyContent="center" alignItems="center" maxWidth={800}>
+                    <Grid container direction="row" justifyContent="flex-start" alignItems="center" maxWidth={800}>
                         {serviceData.map((item, index) => (
                             <ServiceCard xs={12} md={6} lg={6} data={item} index = {index} key = {index}/>
                         ))}

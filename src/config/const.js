@@ -1,7 +1,6 @@
 import service1Icon from "../assets/images/service1.png";
 import service2Icon from "../assets/images/service2.png";
 import service3Icon from "../assets/images/service3.png";
-import service4Icon from "../assets/images/service4.png";
 
 import solar1Icon from "../assets/images/solar1.png"
 import solar2Icon from "../assets/images/solar2.png"
@@ -20,51 +19,46 @@ import aboutImg from "../assets/images/about.png";
 export const solarData = [
     {
         image: solar1Icon,
-        title:"Consensus",
-        detail: "Some generals may be traitors trying to confuse the others (faulty or maliciouse nodes)"
+        title:"DPoS Consensus",
+        detail: "The Solar Blockchain employs a forked Delegated Proof of Stake Consensus from ARK Core, featuring 53 block producers in its network"
     },
     {
         image: solar2Icon,
         title:"Fast & Secure",
-        detail: "Some generals may be traitors trying to confuse the others (faulty or maliciouse nodes)"
+        detail: "The Solar Blockchain excels with 53 block producers and a rapid 8-second block-time, cementing its status in the blockchain industry"
     },
     {
         image: solar3Icon,
-        title:"Fast & Secure",
-        detail: "Some generals may be traitors trying to confuse the others (faulty or maliciouse nodes)"
+        title:"Voting",
+        detail: "You can engage with the network as a block producer or vote for one of the 53 producers to potentially earn network commissions"
     },
     {
         image: solar4Icon,
-        title:"Consensus",
-        detail: "Some generals may be traitors trying to confuse the others (faulty or maliciouse nodes)"
+        title:"Advanced Ecosystem",
+        detail: "Solar offers developers and users a robust toolkit, fostering innovation to keep the Solar Blockchain at the industry forefront"
     }
 ]
 
 export const serviceData = [
     {
-        link:"Connect",
+        // link:"Connect",
         image: service1Icon,
-        title: "Decentralised Application",
-        detail: "Grow the economy of your chain by connecting to Cosmos Hub services using IBC protocol."
+        title: "SolarScan",
+        detail: "Dive into the heart of the Solar Blockchain with its native explorer. Track transactions, monitor block producers, and gain insights into the network's performance. SolarScan offers full transparency, ensuring trust and clarity for all its users"
     },
     {
-        link:"Connect",
+        // link:"Connect",
         image: service2Icon,
-        title: "Decentralised Application",
-        detail: "Grow the economy of your chain by connecting to Cosmos Hub services using IBC protocol."
+        title: "Solar Wallet",
+        detail: "Introducing Solar Wallets for seamless SXP Blockchain connectivity. These wallets will soon offer an array of tools and features for enhanced interaction with the Blockchain and the community."
     },
     {
-        link:"Connect",
+        // link:"Connect",
         image: service3Icon,
-        title: "Decentralised Application",
-        detail: "Grow the economy of your chain by connecting to Cosmos Hub services using IBC protocol."
+        title: "Solar Swap",
+        detail: "Seamlessly trade and manage your assets on the Solar Blockchain. With a user-friendly interface, secure transactions, and lightning-fast execution, SolarSwap ensures an optimal trading experience within the Solar ecosystem"
     },
-    {
-        link:"Connect",
-        image: service4Icon,
-        title: "Decentralised Application",
-        detail: "Grow the economy of your chain by connecting to Cosmos Hub services using IBC protocol."
-    }
+   
 ]
 
 export const productData = [
@@ -72,19 +66,22 @@ export const productData = [
         button: "Game",
         title: "District 53 - Metaverse",
         detail: " District 53 a decentralised multiverse bult on the Solar blockchain and forked from Minetest. It offers users the ability to purchase virtual land, trade with other users, advertise on their property, and interact with the blockchain. With a wide range of activities to participate in, the District 53 metaverse has something for everyone, Join us today to explore this exiting new world!",
-        image: districtIcon
+        image: districtIcon,
+        link: "https://medium.com/@dokdo_sh/district-53-pre-launch-announcement-be3ac4b8c6d5"
     },
     {
         button: "Platform for games",
         title: "Tymt",
         detail: "Developed by Dokdo, the same innovative minds behind District 53 Metaverse, tymt is a promising solution set to revolutionise the gaming industry. This next generation game launcher bridges the gap between traditional, blockchain, and Web3 games, overcoming the challenges that have often hampered blockchin gaming. District 53, a voxel-based Metaverse game utilising the Solar Blockchain, had drawn significant attention and reached.",
-        image: tymtIcon
+        image: tymtIcon,
+        link: "https://medium.com/@district53"
     },
     {
         button: "Wallet",
-        title: "Solar card",
+        title: "Mobile App",
         detail: "Digital payments with crypto debit cards and IBAN accounts combined with concierge services. Digital payments with crypto debit cards and IBAN account combined with concierge services.",
-        image: solarIcon
+        image: solarIcon,
+        link: "https://medium.com/@district53"
     }
 ]
 
@@ -92,19 +89,19 @@ export const joinData = [
     {
         icon: tgIcon,
         title: "Community Chat",
-        detail: " Ask general questions and chat with the world wide community on Telegram",
-        link: "Github.com"
+        detail: "Feel free to ask any questions and have friendly chats with people from around the world",
+        link: "https://t.me/dokdo_official "
     },
     {
         icon: twiterIcon,
         title: "Twitter",
-        detail: "Follow to get the lastes news and updates from across the ecosystem.",
-        link: "Github.com"
+        detail: "Stay tuned for the freshest news and updates from all around the ecosystem by following us",
+        link: "https://twitter.com/dokdo_sh"
     },
     {
         icon: discordIcon,
         title: "Discord Chat",
-        detail: "Have technical questions about tools? Ask a developer on the Communitiy Discord.",
+        detail: "Exciting news! Our Discord community is on its way. Stay tuned",
         link: "Github.com"
     }
 
@@ -114,14 +111,14 @@ export const developerData = [
     {
         icon: gitIcon,
         title: "Github",
-        detail: "Have technical questions about tools? Ask a developer on the Community Discord",
+        detail: "Our GitHub presence is on the horizon. Stay tuned for updates! ",
         link: "Github.com"
     },
     {
         icon: gitIcon,
-        title: "Whitepaper",
-        detail: "Have technical questions about tools? Ask a developer on the Community Discord",
-        link: "Github.com"
+        title: "Medium blog",
+        detail: "Please visit our Medium blog for the latest articles and updates",
+        link: "https://medium.com/@dokdo_sh"
     }
 ]
 
