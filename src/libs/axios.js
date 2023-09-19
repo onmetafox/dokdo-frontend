@@ -1,8 +1,8 @@
 import axios from 'axios';
-
+const api_path = "http://localhost:3001"
 const Axios = axios.create({
   responseType: 'json',
-  baseURL: '/api',
+  baseURL: `${api_path}/api`,
 });
 
 Axios.interceptors.request.use(function (options) {
