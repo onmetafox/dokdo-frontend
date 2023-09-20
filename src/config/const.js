@@ -14,6 +14,7 @@ import twiterIcon from "../assets/icons/twitter.svg";
 import tgIcon from "../assets/icons/tg.svg";
 import discordIcon from "../assets/icons/discord.svg";
 import gitIcon from "../assets/icons/github.svg";
+import mediumIcon from "../assets/icons/medium.svg";
 
 import aboutImg from "../assets/images/about.png";
 export const solarData = [
@@ -115,7 +116,7 @@ export const developerData = [
         link: "Github.com"
     },
     {
-        icon: gitIcon,
+        icon: mediumIcon,
         title: "Medium blog",
         detail: "Please visit our Medium blog for the latest articles and updates",
         link: "https://medium.com/@dokdo_sh"

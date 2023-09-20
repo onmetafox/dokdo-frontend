@@ -10,7 +10,11 @@ header {
   box-shadow: none !important;
 
 }
-
+.divider{
+  border-color: #393A47 !important;
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
 .btn {
   border-radius: 8px;
   border: none;
@@ -31,7 +35,7 @@ header {
   border-radius: 8px;
   border: none;
   font-size: 16px !important;
-  font-weight: bold;
+  font-weight: bold !important;
   text-align: center;
   color: #FFFFFF;
   padding-right: 5px;
@@ -109,6 +113,7 @@ header {
   padding: 0.4em 1em 0.4em 1em;
   text-decoration: none !important;
   color: white;
+  font-weight: bold;
 }
 
 .header {

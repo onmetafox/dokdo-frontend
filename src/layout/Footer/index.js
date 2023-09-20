@@ -31,7 +31,7 @@ const Footer = () => {
                                 <Box className="f-body t-s m-tb-10">Join us</Box>
                             </Grid>
                             <Grid item xs={4}>
-                                <Box className="f-body t-s m-tb-10">Developers</Box>
+                                <Box className="f-body t-s m-tb-10">Links</Box>
                             </Grid>
                         </Grid>
                             
@@ -43,7 +43,7 @@ const Footer = () => {
                                 <ExternalLink icon={false} title="Telegram" href="https://t.me/dokdo_official" className="t-p t-body no-line m-tb-10" />
                             </Grid>
                             <Grid item xs={4}>
-                                <ExternalLink icon={false} title="Github" href="/" className="t-p t-body no-line m-tb-10" />
+                                <Link  href="/terms" className="ext-link t-p t-body no-line m-tb-10">Terms and Conditions</Link>
                             </Grid>
                         </Grid>
                         <Grid container>
@@ -54,8 +54,9 @@ const Footer = () => {
                                 <ExternalLink icon={false} title="Twitter" href="https://twitter.com/dokdo_sh" className="t-p t-body no-line m-tb-10" />
                             </Grid>
                             <Grid item xs={4}>
-                                <ExternalLink icon={false} title="Whitepaper" href="" className="t-p t-body no-line m-tb-10" />
+                                <Link  href="/policy" className="ext-link t-p t-body no-line m-tb-10">Privacy Policy</Link>
                             </Grid>
+
                         </Grid>
                         <Grid container>
                             <Grid item xs={4}>
@@ -64,8 +65,14 @@ const Footer = () => {
                             <Grid item xs={4}>
                                 <ExternalLink icon={false} title="Discord" href="" className="t-p t-body no-line m-tb-10" />
                             </Grid>
+                            
+                        </Grid>
+                        <Grid container>
                             <Grid item xs={4}>
                                 <ExternalLink icon={true} status="inactive" title="Blog" href="https://medium.com/@dokdo_sh" className="t-p t-body no-line m-tb-10" />
+                            </Grid>
+                            <Grid item xs={4}>
+                                <ExternalLink icon={false} title="Github" href="/" className="t-p t-body no-line m-tb-10" />
                             </Grid>
                         </Grid>
                     </Grid>

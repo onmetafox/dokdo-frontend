@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { Box,  AppBar, Container, Toolbar, List, IconButton, ListItem, ListItemButton, ListItemText, Drawer, Grid } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import { useNavigate  } from 'react-router-dom';
 import Button from 'src/components/Button';
 
 import logoIcon from "../../assets/images/logo.svg"
@@ -9,11 +9,15 @@ import ItemMenu from 'src/components/ItemMenu';
 import routes from 'src/routes';
 
 const Header = (props) => {
+    const navigate = useNavigate();
     const { window } = props;
     const [mobileOpen, setMobileOpen] = useState(false);
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
     };
+    const gotoContact = useCallback(()=>{
+        navigate('/contact');
+    },[navigate])
     const container = window !== undefined ? () => window().document.body : undefined;
     const drawerWidth = 240;
     const drawer = (
@@ -47,11 +51,12 @@ const Header = (props) => {
                         </Grid>
                         <Grid item lg = {8} md = {8} sm = {8} xs={6} sx={{display: {sm: 'flex', xs: 'none'}}}>
                             <Box sx={{ flexGrow: 1, justifyContent:'center', display: { xs: 'none', sm: 'flex' } }}>
-                                {routes.map(({title, href}, key) => (
+                                {routes.map(({title, href, index}, key) => (
                                     <ItemMenu
                                         className = "f-body m-lr-10"
                                         href={href}
                                         key = {key}
+                                        index = {index}
                                     >
                                         {title}
                                     </ItemMenu>
@@ -60,7 +65,7 @@ const Header = (props) => {
                         </Grid>
                         <Grid item lg = {2} md = {2} sm = {2} xs={6} justifyContent='flex-end' sx = {{display :{lg: 'flex'}, textAlign:'right'}}>
                             <Box sx={{ flexGrow: 1,  justifyContent:'flex-end', alignItems:'center', display:{xs:'flex'} }}>
-                                <Button title="Contact us"  className = "bg-gp t-p btn-sm p-lr-10"/>
+                                <Button title="Contact us"  className = "bg-gp t-p btn-sm p-lr-10" handler={gotoContact}/>
                                 <Box sx={{ flexGrow: 0, justifyContent:'flex-end', display: { sm: 'none', xs: 'flex' } }}>
                                     <nav style={{backgroundColor:'black'}}>
                                         <Drawer
