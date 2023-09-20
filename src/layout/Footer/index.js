@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { Box, Container, Grid, Stack, Link } from '@mui/material';
+import { useDispatch } from "react-redux";
 
 import Button from 'src/components/Button';
-
 import logoIcon from "../../assets/images/logo.svg"
 import Input from 'src/components/Input';
 import ExternalLink from 'src/components/Link';
-
+import { createSubscribeAsync } from 'src/features/contact/subscribeSlice';
 
 
 const Footer = () => {
+    const dispath = useDispatch();
+    // const status = useSelector(selectStatus);
+    const [email, setEmail] = useState();
+    const handlerSubscribe = useCallback(()=>{
+        dispath(createSubscribeAsync({email}))
+    }, [dispath, email])
     return (
         <Box className='footer-section'>
             <Container maxWidth="xl">
@@ -18,8 +24,8 @@ const Footer = () => {
                         <Box component="img" src = {logoIcon} sx={{width:'120px'}} />
                         <Box className="t-p fs-s m-tb-10">Subscrive to get the latest news</Box>
                         <Stack direction="row" spacing={5}>
-                            <Input placeHolder = "Subscribe" />
-                            <Button className="btn-lg bg-gp p-lr-20 m-lr-20" title="Subscribe" />
+                            <Input handler={setEmail} value = {email} placeHolder = "Subscribe" />
+                            <Button handler = {handlerSubscribe} className="btn-lg bg-gp p-lr-20 m-lr-20" title="Subscribe" />
                         </Stack>
                     </Grid>
                     <Grid item xs = {12} sm={12} lg = {6} md={12}>
