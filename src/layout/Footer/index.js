@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
-import { Box, Container, Grid, Stack, Link } from '@mui/material';
+import { Box, Container, Grid, Stack } from '@mui/material';
+import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
 import Button from 'src/components/Button';
@@ -66,7 +67,7 @@ const Footer = () => {
                         </Grid>
                         <Grid container>
                             <Grid item xs={4}>
-                                <Link title="Contact us" href="/contact" className="ext-link t-p t-body no-line m-tb-10">Contact us</Link>
+                                <Link title="Contact us" to="/contact" className="ext-link t-p t-body no-line m-tb-10">Contact us</Link>
                             </Grid>
                             <Grid item xs={4}>
                                 <ExternalLink icon={false} title="Discord" href="" className="t-p t-body no-line m-tb-10" />
