@@ -1,10 +1,10 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-// import errorHanlder from 'src/libs/error-handler';
 import { createContact } from "./contactApi";
 
 const initialState = {
     contactdata: null,
-    status: 'contact'
+    status: 'contact',
+    msg: ''
 }
 
 export const createContactAsync = createAsyncThunk('create/contact', createContact);
@@ -25,6 +25,7 @@ export const contactSlice = createSlice({
             .addCase(createContactAsync.fulfilled, (state, action) =>{
                 state.status = action.payload.status;
                 state.contactdata = action.payload.data;
+                state.msg = "We will contat you as soon as possible";
             })
     }
 })
@@ -32,5 +33,6 @@ export const contactSlice = createSlice({
 
 export const selectContactData = state => state.contact.contactdata;
 export const selectStatus = state => state.contact.status;
+export const selectMsg = state => state.contact.msg
 
 export default contactSlice.reducer;

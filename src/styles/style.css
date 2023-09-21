@@ -78,6 +78,7 @@ header {
   border-color: #393A47;
   padding: 10px;
   min-height: 25px;
+  color: white;
 }
 
 ::placeholder {
@@ -115,7 +116,12 @@ header {
   color: white;
   font-weight: bold;
 }
-
+.dialog{
+  /* background-image: url("../assets/images/thanks-bg.png");
+  background-size: cover; */
+  min-width: 400px;
+  padding: 50px !important;
+}
 .header {
   height: 80px;
 }
@@ -124,7 +130,9 @@ header {
   justify-content: center;
   align-items: center;
 }
-
+.err-border{
+  border-color: #DB3B4B !important;
+}
 .loader {
   width: 48px;
   height: 48px;
@@ -205,9 +213,8 @@ header {
   border-radius: 0.8em;
   background-color: #0b0b0f;
   .input{
-    margin: 1em;
-    width: 90%;
-    color: white;
+    width: 100%;
+    margin-top: 1rem;
   }
   .btn {
     margin: 1em;

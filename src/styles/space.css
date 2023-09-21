@@ -54,14 +54,17 @@
     padding-left: 1em;
     padding-right: 1em;
 }
-.p-tb-20{
-    padding-top: 4em;
-    padding-bottom: 4em;
+.p-tb-10{
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
-
 .p-tb-20{
     padding-top: 2em;
     padding-bottom: 2em;
+}
+.p-tb-40{
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 
 .p-tb-80{
@@ -88,6 +91,9 @@
             margin-top: 2em !important;
         }
         .mt-80-m{
+            margin-top: 2em !important;
+        }
+        .mt-40-m{
             margin-top: 2em !important;
         }
     }

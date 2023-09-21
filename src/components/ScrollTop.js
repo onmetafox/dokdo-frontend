@@ -1,25 +1,31 @@
-import React, { memo, useCallback } from 'react';
+import React, { memo, useCallback, useEffect } from 'react';
 import { Fade, Box, useScrollTrigger } from '@mui/material';
 import PropTypes from 'prop-types';
-
+import { useLocation } from 'react-router-dom';
 function ScrollTop(props) {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Add smooth scrolling behavior
+    });
+  }, [pathname]);
+
   const { children } = props;
   // Note that you normally won't need to set the window ref as useScrollTrigger
   // will default to window.
   // This is only being set here because the demo is in an iframe.
   const trigger = useScrollTrigger({
     disableHysteresis: true,
-    threshold: 100,
+    threshold: 1000,
   });
 
   const handleClick = useCallback(event => {
-    const anchor = (event.target.ownerDocument || document).querySelector('#back-to-top-anchor');
-
-    if (anchor) {
-      anchor.scrollIntoView({
-        block: 'center',
-      });
-    }
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Add smooth scrolling behavior
+    });
   }, []);
 
   return (

@@ -1,22 +1,52 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { Box, Container, Grid, Stack } from '@mui/material';
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import Button from 'src/components/Button';
-import logoIcon from "../../assets/images/logo.svg"
+import logoIcon from "../../assets/images/logo.svg";
+import checkIcon from "../../assets/icons/check.svg";
 import Input from 'src/components/Input';
 import ExternalLink from 'src/components/Link';
-import { createSubscribeAsync } from 'src/features/contact/subscribeSlice';
-
+import { createSubscribeAsync, selectMsg, selectStatus } from 'src/features/contact/subscribeSlice';
+import { validateEmail } from 'src/libs/validate';
 
 const Footer = () => {
     const dispath = useDispatch();
-    // const status = useSelector(selectStatus);
+    const msg = useSelector(selectMsg)
+    const status = useSelector(selectStatus)
     const [email, setEmail] = useState();
+    const [emailErr, setEmailErr] = useState();
+    const [show, setShow] = useState(false)
+    const validate = useCallback(()=>{
+        let check = true;
+        setEmailErr('');
+    
+        if (!email) {
+          setEmailErr("Email is required!");
+          check = false;
+        } else if (!validateEmail(email)) {
+          setEmailErr("Please provide a valid email address to subscribe");
+          check = false;
+        }
+        return check;
+    },[email])
+
+    useEffect(()=>{
+        if(status === "Success"){
+            setShow(true)
+        }
+        if(status === "Failure"){
+            setEmailErr(msg)
+        }
+    }, [status, msg])
+
     const handlerSubscribe = useCallback(()=>{
-        dispath(createSubscribeAsync({email}))
-    }, [dispath, email])
+        if(validate()){
+            dispath(createSubscribeAsync({email}))
+        }
+    }, [dispath, email, validate])
+
     return (
         <Box className='footer-section'>
             <Container maxWidth="xl">
@@ -24,10 +54,23 @@ const Footer = () => {
                     <Grid item sm={12} lg = {6} md={12}>
                         <Box component="img" src = {logoIcon} sx={{width:'120px'}} />
                         <Box className="t-p fs-s m-tb-10">Subscrive to get the latest news</Box>
-                        <Stack direction="row" spacing={5}>
-                            <Input handler={setEmail} value = {email} placeHolder = "Subscribe" />
-                            <Button handler = {handlerSubscribe} className="btn-lg bg-gp p-lr-20 m-lr-20" title="Subscribe" />
-                        </Stack>
+                        {!show &&
+                            <Grid container>
+                                <Grid item xs = {7}>
+                                    <Input handler={setEmail} value = {email} placeHolder = "Subscribe" error={emailErr} sx={{width: '90%'}}/>
+                                </Grid>
+                                <Grid item xs = {5}>
+                                    <Button handler = {handlerSubscribe} className="btn-lg bg-gp p-lr-20 m-lr-20" title="Subscribe" />  
+                                </Grid>
+                            </Grid>
+                        }
+                        {show && (<Stack direction="row" alignItems='center'>
+                                <Box component="img" src={checkIcon}></Box>
+                                <Box className="p-lr-10 t-o f-body">Subscription Successful <br /> You've successfully subscribed to our emails. Stay tuned for updates and news.</Box>
+                            </Stack>
+                            )
+                        }
+                        
                     </Grid>
                     <Grid item xs = {12} sm={12} lg = {6} md={12}>
                         <Grid container>

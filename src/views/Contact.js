@@ -1,38 +1,80 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { Box, Container, Grid, Dialog, IconButton, DialogContent, Typography } from "@mui/material"
-import { styled } from '@mui/material/styles';
-import CloseIcon from '@mui/icons-material/Close';
+import { Box, Container, Grid } from "@mui/material"
+
 import { useDispatch, useSelector } from "react-redux";
 import Input from "src/components/Input";
 import Button from "src/components/Button";
-import { createContactAsync, selectStatus } from "src/features/contact/contactSlice";
+import { createContactAsync, selectStatus, selectMsg } from "src/features/contact/contactSlice";
+import { validateEmail } from "src/libs/validate";
 
-const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-    '& .MuiDialogContent-root': {
-      padding: theme.spacing(2),
-    },
-    '& .MuiDialogActions-root': {
-      padding: theme.spacing(1),
-    },
-}));
+import Success from "src/components/Success";
 
 const ContactPage  = () => {
+    
     const dispath = useDispatch();
     const status = useSelector(selectStatus);
+    const msg = useSelector(selectMsg)
     const [email, setEmail] = useState();
     const [name, setName] = useState();
     const [phone, setPhone] = useState();
     const [comment, setComment] = useState();
+    const [emailErr, setEmailErr] = useState('');
+    const [nameErr, setNameErr] = useState('');
+    const [phoneErr, setPhoneErr] = useState('');
+    const [commentErr, setCommentErr] = useState('');
     const [open, setOpen] = useState(false);
+    const [title, setTitle] = useState();
+    const [success, setSuccess] = useState(false);
+
+    const validate = useCallback(() => {
+        let check = true;
+        setEmailErr('');
+        setNameErr('');
+        setPhoneErr('');
+        setCommentErr('');
+    
+        if (!email) {
+          setEmailErr("Email is required!");
+          check = false;
+        } else if (!validateEmail(email)) {
+          setEmailErr("Email is not valid!");
+          check = false;
+        }
+        if (!name) {
+          setNameErr("Name is required.");
+          check = false;
+        }
+        if (!phone) {
+          setPhoneErr("Phone Number is required.");
+          check = false;
+        }
+        if (!comment) {
+          setCommentErr("Comment is required.");
+          check = false;
+        }
+        return check;
+    }, [email, name, phone, comment]);
+
+    const handlerContact = useCallback(()=>{
+        if(validate()){
+            dispath(createContactAsync({email, name, phone, comment}))
+        }
+    }, [dispath, email, comment, name, phone, validate]);
+    
     useEffect(()=>{
         if(status === "Success"){
             setOpen(true);
+            setTitle("Thank you");
+            setSuccess(true);
+        }else{
+            setTitle("Faield");
+            setSuccess(false);
         }
     },[status])
-    const handlerContact = useCallback(()=>{
-        dispath(createContactAsync({email, name, phone, comment})).then(()=>{
-        })
-    }, [dispath, email, comment, name, phone])
+    
+    const handlerDialog = useCallback(()=>{
+        setOpen(false);
+    },[])
     return<Box className = "contact-section p-tb-80">
         <Container maxWidth="xl">
             <Grid container direction="row" alignItems="center" justifyContent="flex-start" spacing={5}>
@@ -42,48 +84,15 @@ const ContactPage  = () => {
                 </Grid>
                 <Grid item xs={12} md={12} lg={7}>
                     <Box className="contact-box">
-                        <Input handler={setEmail} value = {email} placeHolder="Email"></Input>
-                        <Input handler={setPhone} value = {phone} placeHolder="Phone number"></Input>
-                        <Input handler={setName} value = {name} placeHolder="Name"></Input>
-                        <Input handler={setComment} value = {comment} placeHolder="Comment" multiple={true} rows={4}></Input>
+                        <Input handler={setEmail} value = {email} placeHolder="Email" error = {emailErr} />
+                        <Input handler={setPhone} value = {phone} placeHolder="Phone number" error = {phoneErr} />
+                        <Input handler={setName} value = {name} placeHolder="Name" error = {nameErr} />
+                        <Input handler={setComment} value = {comment} placeHolder="Comment" multiple={true} rows={4} error={commentErr}/>
                         <Button handler = {handlerContact}  className="btn bg-gp t-p btn-sm p-lr-10" title= "Send"/>
                     </Box>
                 </Grid>               
             </Grid>
-            <BootstrapDialog
-                // onClose={setOpen(false)}
-                aria-labelledby="customized-dialog-title"
-                open={open}
-            >
-                <IconButton
-                aria-label="close"
-                // onClick={setOpen(false)}
-                sx={{
-                    position: 'absolute',
-                    right: 8,
-                    top: 8,
-                    color: (theme) => theme.palette.grey[500],
-                }}
-                >
-                <CloseIcon />
-                </IconButton>
-                <DialogContent>
-                    <Typography gutterBottom>
-                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                        consectetur ac, vestibulum at eros.
-                    </Typography>
-                    <Typography gutterBottom>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-                        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-                    </Typography>
-                    <Typography gutterBottom>
-                        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-                        magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-                        ullamcorper nulla non metus auctor fringilla.
-                    </Typography>
-                </DialogContent>
-            </BootstrapDialog>
+            <Success open = {open} msg={msg} success = {success} title={title} closeDlg={handlerDialog}/>
         </Container>       
     </Box>
 }
