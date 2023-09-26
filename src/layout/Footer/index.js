@@ -52,7 +52,7 @@ const Footer = () => {
             <Container maxWidth="xl">
                 <Grid container justifyContent="flex-start" alignItems="center"  spacing={5}>
                     <Grid item sm={12} lg = {6} md={12}>
-                        <Box component="img" src = {logoIcon} sx={{width:'120px'}} />
+                        <Link to = "/home" ><Box component="img" src = {logoIcon} sx={{width:'120px'}} /></Link>
                         <Box className="t-p fs-s m-tb-10">Subscrive to get the latest news</Box>
                         {!show &&
                             <Grid container>

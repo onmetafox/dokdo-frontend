@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import { Box,  AppBar, Container, Toolbar, List, IconButton, ListItem, ListItemButton, ListItemText, Drawer, Grid } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import { useNavigate  } from 'react-router-dom';
+import { useNavigate, Link  } from 'react-router-dom';
 import Button from 'src/components/Button';
 
 import logoIcon from "../../assets/images/logo.svg"
@@ -42,12 +42,14 @@ const Header = (props) => {
                 <Toolbar disableGutters>
                     <Grid container direction="row"   justifyContent="space-between"  alignItems="center" spacing={0}>
                         <Grid item lg = {2} md = {2} sm = {2} xs = {6} sx = {{display :{sm: 'block'}}}>
-                            <Box
-                                sx={{ padding: '5px', height: 60 }}
-                                component="img"
-                                alt = "Go to Home"
-                                src={logoIcon}
-                            />
+                            <Link to="/home">
+                                <Box
+                                    sx={{ padding: '5px', height: 60 }}
+                                    component="img"
+                                    alt = "Go to Home"
+                                    src={logoIcon}
+                                />
+                            </Link>
                         </Grid>
                         <Grid item lg = {8} md = {8} sm = {8} xs={6} sx={{display: {sm: 'flex', xs: 'none'}}}>
                             <Box sx={{ flexGrow: 1, justifyContent:'center', display: { xs: 'none', sm: 'flex' } }}>
