@@ -24,7 +24,7 @@ const Header = (props) => {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center'}}>
             <Link to="/">
-                <Box component="img" src={logoIcon} sx={{width:'70%'}}/>
+                <Box component="img" src={logoIcon} sx={{width:'30%', paddingTop:2}}/>
             </Link>
             <List>
                 {routes.map(({title, href}, key) =>
@@ -34,7 +34,7 @@ const Header = (props) => {
                             {pathname === href &&  (
                                 <Link to={href} className='link f-body corner-3' sx={{justifyContent:'center'}}><ListItemText primary={title} /></Link>
                             )}
-                            {pathname != href &&  (
+                            {pathname !== href &&  (
                                 <Link to={href} className='link f-body' sx={{justifyContent:'center'}}><ListItemText primary={title} /></Link>
                             )}
                         </ListItemButton>
