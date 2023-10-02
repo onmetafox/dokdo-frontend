@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import { Box,  AppBar, Container, Toolbar, List, IconButton, ListItem, ListItemButton, ListItemText, Drawer, Grid } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import { useNavigate, Link  } from 'react-router-dom';
+import { useNavigate, Link, useLocation  } from 'react-router-dom';
 import Button from 'src/components/Button';
 
 import logoIcon from "../../assets/images/logo.svg"
@@ -9,6 +9,7 @@ import ItemMenu from 'src/components/ItemMenu';
 import routes from 'src/routes';
 
 const Header = (props) => {
+    const { pathname } = useLocation();
     const navigate = useNavigate();
     const { window } = props;
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -19,20 +20,26 @@ const Header = (props) => {
         navigate('/contact');
     },[navigate])
     const container = window !== undefined ? () => window().document.body : undefined;
-    const drawerWidth = 240;
+    const drawerWidth = 300;
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-          <Box component="img"
-            src={logoIcon}
-          />
-          <List>
-            {routes.map(({title, href}, key) => (
-              <ListItem key={key} disablePadding>
-                <ListItemButton sx={{ textAlign: 'center' }}>
-                  <ListItemText primary={title} />
-                </ListItemButton>
-              </ListItem>
-            ))}
+        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center'}}>
+            <Link to="/">
+                <Box component="img" src={logoIcon} sx={{width:'70%'}}/>
+            </Link>
+            <List>
+                {routes.map(({title, href}, key) =>
+                   (
+                    <ListItem key={key} disablePadding>
+                        <ListItemButton sx={{justifyContent:'center'}}>
+                            {pathname === href &&  (
+                                <Link to={href} className='link f-body corner-3' sx={{justifyContent:'center'}}><ListItemText primary={title} /></Link>
+                            )}
+                            {pathname != href &&  (
+                                <Link to={href} className='link f-body' sx={{justifyContent:'center'}}><ListItemText primary={title} /></Link>
+                            )}
+                        </ListItemButton>
+                    </ListItem>
+                ))}
           </List>
         </Box>
     );
@@ -80,7 +87,7 @@ const Header = (props) => {
                                             }}
                                             sx={{
                                                 display: { xs: 'block', sm: 'none' },
-                                                '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                                                '& .MuiDrawer-paper': {backgroundColor:'black', color:'white', boxSizing: 'border-box', width: drawerWidth },
                                             }}
                                         >
                                         {drawer}

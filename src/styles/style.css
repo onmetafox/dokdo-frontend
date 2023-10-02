@@ -205,7 +205,7 @@ header {
 .about-card{
   text-align: left;
   margin-top: 20px;
-  padding: 5em;
+  padding: 3em;
   display: flex;
   flex-direction: column !important;
   width: fit-content;

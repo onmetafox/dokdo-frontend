@@ -9,9 +9,6 @@ const AboutPage = ({route}) => {
             <Grid item xs={12}>
                     <Box className="h3 t-p"> Meet Our Team</Box>
                 </Grid>
-                <Grid item xs={6} >
-                    <Box className="fs-2 t-p p-20" maxWidth={640}>The Solar blockchain provides the end-user with rich libraries and tools to develop projects on the blockchain for many usecases.</Box>
-                </Grid>
             <Grid item xs={12}>
                 <Grid container direction="row" justifyContent="center" alignItems="center" >
                     <Grid item lg={11} md={12}>
