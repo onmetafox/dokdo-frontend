@@ -2,7 +2,7 @@ import React from "react";
 import circle1 from "../assets/images/circle1.png";
 import circle2 from "../assets/images/circle2.png";
 
-import { Box, Hidden } from "@mui/material";
+import { Box } from "@mui/material";
 
 const AnimComp = () => {
     return <Box sx={{position:"relative",overflow:'hidden', width:'100%'}}>
