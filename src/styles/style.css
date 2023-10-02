@@ -2,6 +2,10 @@ body {
   margin: 0;
   background-color: black;
   font-family: "Satoshi";
+  /* overflow: hidden; */
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 
 header {
@@ -51,7 +55,7 @@ header {
 }
 
 .btn-lg {
-  height: 46px;
+  height: 49px;
 }
 
 .anim-circle {
@@ -201,14 +205,16 @@ header {
 .about-card{
   text-align: left;
   margin-top: 20px;
-  padding: 20px;
+  padding: 5em;
   display: flex;
   flex-direction: column !important;
   width: fit-content;
   justify-content: initial;
   margin-left: auto;
   margin-right: auto;
-
+  .photo {
+    margin-left: 0;
+  }
 }
 .contact-box {
   margin: 1em;
@@ -323,13 +329,18 @@ header {
 .img-rotate{
   animation: rotateImg 7s linear infinite;
 }
-@keyframes rotateImg{
-  from {
-   transform: rotate(0deg);
+@keyframes rotateAnimation {
+  0% {
+      transform: rotate(0deg);
   }
- to {
-  transform: rotate(359deg);
- }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.rotating-element {
+  animation: rotateAnimation 5s linear infinite;
+  transform-origin: center; /* Adjust as needed */
 }
 @media (max-width:900px) {
   .head-section{
@@ -377,13 +388,19 @@ header {
   header {
     height: 56px;
   }
-
   .large {
     display: none !important;
   }
 
   .small {
     display: flex !important;
+  }
+  .footer-section{
+    .btn{
+      min-width: 0px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
   }
 
 }

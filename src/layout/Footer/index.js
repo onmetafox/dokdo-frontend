@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 import Button from 'src/components/Button';
-import logoIcon from "../../assets/images/logo.svg";
+import logoIcon from "../../assets/images/logo2.svg";
 import checkIcon from "../../assets/icons/check.svg";
 import Input from 'src/components/Input';
 import ExternalLink from 'src/components/Link';
@@ -55,12 +55,12 @@ const Footer = () => {
                         <Link to = "/home" ><Box component="img" src = {logoIcon} sx={{width:'120px'}} /></Link>
                         <Box className="t-p fs-s m-tb-10">Subscrive to get the latest news</Box>
                         {!show &&
-                            <Grid container>
+                            <Grid container spacing={5}>
                                 <Grid item xs = {7}>
-                                    <Input handler={setEmail} value = {email} placeHolder = "Subscribe" error={emailErr} sx={{width: '90%'}}/>
+                                    <Input handler={setEmail} value = {email} placeHolder = "Subscribe" error={emailErr} sx={{width:'100%'}}/>
                                 </Grid>
                                 <Grid item xs = {5}>
-                                    <Button handler = {handlerSubscribe} className="btn-lg bg-gp p-lr-20 m-lr-20" title="Subscribe" />  
+                                    <Button handler = {handlerSubscribe} className="btn-lg bg-gp p-lr-20" title="Subscribe" />  
                                 </Grid>
                             </Grid>
                         }

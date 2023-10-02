@@ -29,7 +29,7 @@ const Header = (props) => {
             {routes.map(({title, href}, key) => (
               <ListItem key={key} disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
-                  <ListItemText primary={title} />
+                  <Link title={title} to = {href}> {title} </Link>
                 </ListItemButton>
               </ListItem>
             ))}

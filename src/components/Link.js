@@ -11,10 +11,10 @@ const Link = (props) => {
         <Stack direction='row' spacing={2}>
             <a href = {href} className = {classNames} target='_blank' rel="noreferrer">{title}</a>
             {icon && status==="active" && (
-                <img src={linkActiveIcon} alt='link' />
+                <img src={linkActiveIcon} style={{margin:0}} alt='link' />
             )}
             {icon && status==="inactive" && (
-                <img src={defaultLinkIcon}  alt='link'/>
+                <img src={defaultLinkIcon} style={{margin:0}} alt='link'/>
             )}
         </Stack>
     )

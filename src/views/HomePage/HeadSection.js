@@ -3,10 +3,9 @@ import React, { useEffect, useState } from "react";
 import TextTransition, { presets } from 'react-text-transition';
 
 import solarIcon from "../../assets/logos/solar.svg";
-import discordIcon from "../../assets/logos/discord.svg";
-import upbitIcon from "../../assets/logos/upbit.svg";
-import googleIcon from "../../assets/logos/google.svg";
-import jumpIcon from "../../assets/logos/jump.svg";
+import binanceIcon from "../../assets/logos/binance.svg";
+import coinmarkgetIcon from "../../assets/logos/coinmark.svg";
+import bitgetIcon from "../../assets/logos/bitget.svg";
 import gateIcon from "../../assets/logos/gateio.svg";
 
 import Link from "src/components/Link";
@@ -47,10 +46,9 @@ const HeadSection = () => {
                             <Box className="fs-24-b t-o" style={{textAlign:'center'}}>Powering integrations from companies all around the world</Box>
                             <Stack direction="row" spacing={6} useFlexGap flexWrap="wrap" justifyContent='center' className="mt-20">
                                 <Box component="img" src={solarIcon} />
-                                <Box component="img" src={discordIcon} />
-                                <Box component="img" src={upbitIcon} />
-                                <Box component="img" src={googleIcon} />
-                                <Box component="img" src={jumpIcon} />
+                                <Box component="img" src={binanceIcon} />
+                                <Box component="img" src={coinmarkgetIcon} />
+                                <Box component="img" src={bitgetIcon} />
                                 <Box component="img" src={gateIcon} />
                             </Stack>
                         </Grid>

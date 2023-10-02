@@ -16,7 +16,11 @@ import discordIcon from "../assets/icons/discord.svg";
 import gitIcon from "../assets/icons/github.svg";
 import mediumIcon from "../assets/icons/medium.svg";
 
-import aboutImg from "../assets/images/about.png";
+import ceoImg from "../assets/photo/ceo.png";
+import ctoImg from "../assets/photo/cto.png";
+import tpmImg from "../assets/photo/tpm.png";
+import designerImg from "../assets/photo/designer.png";
+import developerImg from "../assets/photo/developer.png";
 export const solarData = [
     {
         image: solar1Icon,
@@ -125,31 +129,38 @@ export const developerData = [
 
 export const aboutData = [
     {
-        image: aboutImg,
-        title: "Nick",
-        detail: "Developer",
-        link: "Github link/Twitter",
-        href: "github.com"
+        image: ceoImg,
+        title: "Nayiem Williams",
+        detail: "CEO",
+        link: "Twitter",
+        href: "https://twitter.com/WillemsTRA"
     },
     {
-        image: aboutImg,
-        title: "Nick",
-        detail: "Developer",
-        link: "Github link/Twitter",
-        href: "github.com"
+        image: ctoImg,
+        title: "Arman Stepanyan",
+        detail: "CTO",
+        link: "Linkedin",
+        href: "https://www.linkedin.com/in/arman-stepanyan-67412a146/"
     },
     {
-        image: aboutImg,
-        title: "Nick",
-        detail: "Developer",
-        link: "Github link/Twitter",
-        href: "github.com"
+        image: tpmImg,
+        title: "Samvel Barseghyan",
+        detail: "TPM",
+        link: "Linkedin",
+        href: "https://www.linkedin.com/in/samvel-barseghyan-305085195/"
     },
     {
-        image: aboutImg,
-        title: "Nick",
-        detail: "Developer",
-        link: "Github link/Twitter",
-        href: "github.com"
+        image: developerImg,
+        title: "Kang Jun Rui",
+        detail: "Full-Stack Developer",
+        link: "Linkedin",
+        href: "https://www.linkedin.com/in/onemetafox/"
+    },
+    {
+        image: designerImg,
+        title: "Taras Oliinyk",
+        detail: "Product Designer",
+        link: "Linkedin",
+        href: "https://www.linkedin.com/in/taras-oliinyk/"
     }
 ]
