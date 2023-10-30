@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate, Link, useLocation  } from 'react-router-dom';
 import Button from 'src/components/Button';
 
-import logoIcon from "../../assets/images/logo.svg"
+import logoIcon from "../../assets/images/logo2.svg";
 import ItemMenu from 'src/components/ItemMenu';
 import routes from 'src/routes';
 

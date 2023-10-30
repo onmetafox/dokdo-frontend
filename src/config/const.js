@@ -130,7 +130,7 @@ export const developerData = [
 export const aboutData = [
     {
         image: ceoImg,
-        title: "Nayiem Williams",
+        title: "Nayiem Willems",
         detail: "CEO",
         link: "Twitter",
         href: "https://twitter.com/WillemsTRA"
@@ -154,7 +154,7 @@ export const aboutData = [
         title: "Kang Jun Rui",
         detail: "Full-Stack Developer",
         link: "Linkedin",
-        href: "https://www.linkedin.com/in/onemetafox/"
+        href: "https://www.linkedin.com/in/onmetafox/"
     },
     {
         image: designerImg,
