@@ -70,14 +70,14 @@ export const productData = [
     {
         button: "Game",
         title: "District 53 - Metaverse",
-        detail: " District 53 a decentralised multiverse bult on the Solar blockchain and forked from Minetest. It offers users the ability to purchase virtual land, trade with other users, advertise on their property, and interact with the blockchain. With a wide range of activities to participate in, the District 53 metaverse has something for everyone, Join us today to explore this exiting new world!",
+        detail: " District 53 a decentralised multiverse built on the Solar blockchain and forked from Minetest. It offers users the ability to purchase virtual land, trade with other users, advertise on their property, and interact with the blockchain. With a wide range of activities to participate in, the District 53 metaverse has something for everyone, Join us today to explore this exciting new world!",
         image: districtIcon,
         link: "https://medium.com/@dokdo_sh/district-53-pre-launch-announcement-be3ac4b8c6d5"
     },
     {
         button: "Platform for games",
         title: "Tymt",
-        detail: "Developed by Dokdo, the same innovative minds behind District 53 Metaverse, tymt is a promising solution set to revolutionise the gaming industry. This next generation game launcher bridges the gap between traditional, blockchain, and Web3 games, overcoming the challenges that have often hampered blockchin gaming. District 53, a voxel-based Metaverse game utilising the Solar Blockchain, had drawn significant attention and reached.",
+        detail: "Developed by Dokdo, the same innovative minds behind District 53 Metaverse, tymt is a promising solution set to revolutionise the gaming industry. This next generation game launcher bridges the gap between traditional, blockchain, and Web3 games, overcoming the challenges that have often hampered blockchain gaming. District 53, a voxel-based Metaverse game utilising the Solar Blockchain, had drawn significant attention and reached.",
         image: tymtIcon,
         link: "https://medium.com/@district53"
     },

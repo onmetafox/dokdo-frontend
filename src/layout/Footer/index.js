@@ -53,7 +53,7 @@ const Footer = () => {
                 <Grid container justifyContent="flex-start" alignItems="center"  spacing={5}>
                     <Grid item sm={12} lg = {6} md={12}>
                         <Link to = "/home" ><Box component="img" src = {logoIcon} sx={{width:'120px'}} /></Link>
-                        <Box className="t-p fs-s m-tb-10">Subscrive to get the latest news</Box>
+                        <Box className="t-p fs-s m-tb-10">Subscribe to get the latest news</Box>
                         {!show &&
                             <Grid container spacing={5}>
                                 <Grid item xs = {7}>

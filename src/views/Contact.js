@@ -80,7 +80,6 @@ const ContactPage  = () => {
             <Grid container direction="row" alignItems="center" justifyContent="flex-start" spacing={5}>
                 <Grid item xs={12} md={12} lg={5}>
                     <Box className="h2 t-p"> Contact us for partnership</Box>
-                    <Box className="fs-s2 t-p p-tb-20" maxWidth={640}>The night is dar and full of terrors. what is dead may never die. And now his watch is ended. all men must die.</Box>
                 </Grid>
                 <Grid item xs={12} md={12} lg={7}>
                     <Box className="contact-box">
