@@ -83,7 +83,7 @@ export const productData = [
     },
     {
         button: "Wallet",
-        title: "Mobile App",
+        title: "Solar Card",
         detail: "Digital payments with crypto debit cards and IBAN accounts combined with concierge services. Digital payments with crypto debit cards and IBAN account combined with concierge services.",
         image: solarIcon,
         link: "https://medium.com/@district53"

@@ -16,7 +16,7 @@ const DokdoSection = () => {
                         <Box className="h3 t-p">dedicated to enhancing the</Box>
                         <Box className="h3 t-p fg">Solar Network ecosystem</Box>
                         <Box className="fs-s2 t-p p-20">
-                            Our goal is to contribute to the grwth and development of the Solar Network by providing innovative solutions, dApps and services.
+                            Our mission is to contribute to the growth and development of the Solar Network by providing innovative solutions, dApps and services.
                         </Box>
                         <Stack direction="row" sx={{display: {lg: "flex", md: 'flex', sm: 'flex', xs: 'block'}, textAlign:'center'}} justifyContent='flex-start' alignItems="center">
                             <Stack direction="column">
