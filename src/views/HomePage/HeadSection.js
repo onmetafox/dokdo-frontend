@@ -13,7 +13,7 @@ import AnimComp from "src/components/AnimCmp";
 
 const HeadSection = () => {
 
-    const TEXTS = ['Save', 'innovative', 'powerful'];
+    const TEXTS = ['Dynamic', 'innovative', 'powerful'];
     const [index, setIndex] = useState(0);
     useEffect(()=>{
         const intervalId = setInterval(
