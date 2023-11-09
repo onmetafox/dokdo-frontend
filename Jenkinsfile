@@ -7,7 +7,7 @@ pipeline {
         stage('prepare') {
             steps {
                 echo "prepare..."
-                sh "npm install"
+                sh "yarn install"
             }
         }
 
