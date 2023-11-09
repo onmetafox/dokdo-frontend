@@ -71,7 +71,7 @@
 //   CORNER BORDER BUILDER   //
 ///////////////////////////////
 
-@mixin buildCorners ($cornerColor: #000, $cornerSize: 20, $cornerThickness: 5, $contentFontSize: 16) {
+@mixin buildCorners ($cornerColor: #000, $cornerSize: 5, $cornerThickness: 5, $contentFontSize: 16) {
   // Params:
   //   - $cornerColor - because the SVG is not inline SVG but background image it cannot inherit the currentColor,
   //                    therefore the color has to be specified explicitly
@@ -104,7 +104,8 @@
   border-width: $borderWidth;
   border-image-source: svg-uri('<svg viewBox="0 0 #{$svgViewBox} #{$svgViewBox}"><rect x="#{$svgRectStart}" y="#{$svgRectStart}" width="#{$svgRectSize}" height="#{$svgRectSize}" fill="transparent" stroke="#{$cornerColor}" stroke-width="#{$svgCornerThickness}" /></svg>');
   border-image-slice: 50%;
-  border-image-width: $borderImageWidth;
+  // border-image-width: $borderImageWidth;
+  border-image-width: 10px;
 }
 
 
@@ -127,7 +128,7 @@
 
 .corner-3 {
   font-size: 1em;
-  padding: 0.4em;
+  padding: 0.3em 1em 0.3em 1em !important;
   margin-left: 1em;
   margin-right: 1em;
   @include buildCorners(#ffffff, 20px, 1px); // absolute mode: for thin borders you want the border dimensions to be in px

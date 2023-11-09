@@ -13,7 +13,7 @@ const routes = [
         index:true
     },
     {
-        title: 'About us',
+        title: 'Our team',
         href: '/about',
         component: AboutPage,
         children: [],

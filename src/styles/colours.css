@@ -50,3 +50,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.trans-text{
+    background: -webkit-linear-gradient(30deg, #ED5C15, #FFAF36);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
