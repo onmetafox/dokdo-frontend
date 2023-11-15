@@ -14,7 +14,7 @@ const AboutPage = ({route}) => {
                     <Grid item lg={11} md={12}>
                         <Grid container direction="row" justifyContent="center" alignItems="center">
                             {aboutData.map((item, index) => (
-                                <AboutCard xs={12} md={6} sm={6} lg={4} data={item} index = {index} key = {index}/>
+                                <AboutCard xs={12} md={4} sm={4} lg={3} data={item} index = {index} key = {index}/>
                             ))}
                         </Grid>
                     </Grid>

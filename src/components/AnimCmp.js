@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 
 const AnimComp = () => {
     return <Box sx={{position:"relative",overflow:'hidden', width:'100%'}}>
-        <Box component="img" src={circle1} sx={{position:'absolute', width:'100%'}}></Box>
+        <Box component="img" src={circle1} sx={{position:'absolute', width:'100%', height:'100%'}}></Box>
         <Box component="img" src={circle2} sx={{width: '100%'}} className="rotating-element"></Box>
     </Box>
 }

@@ -7,6 +7,7 @@ import Button from 'src/components/Button';
 import logoIcon from "../../assets/images/logo2.svg";
 import ItemMenu from 'src/components/ItemMenu';
 import routes from 'src/routes';
+import HeaderScroll from 'src/components/HeaderScroll';
 
 const Header = (props) => {
     const { pathname } = useLocation();
@@ -44,77 +45,74 @@ const Header = (props) => {
         </Box>
     );
     return (
-        <AppBar position="fixed">
-            <Container maxWidth="xl">
-                <Toolbar disableGutters>
-                    <Grid container direction="row"   justifyContent="space-between"  alignItems="center" spacing={0}>
-                        <Grid item lg = {2} md = {2} sm = {2} xs = {6} sx = {{display :{sm: 'block'}}}>
-                            <Link to="/home">
-                                <Box
-                                    sx={{ padding: '5px', height: 60, width:80 }}
-                                    component="img"
-                                    alt = "Go to Home"
-                                    src={logoIcon}
-                                />
-                            </Link>
-                        </Grid>
-                        <Grid item lg = {8} md = {8} sm = {8} xs={6} sx={{display: {sm: 'flex', xs: 'none'}}}>
-                            <Box sx={{ flexGrow: 1, justifyContent:'center', display: { xs: 'none', sm: 'flex' } }}>
-                                {routes.map(({title, href, index}, key) => (
-                                    <ItemMenu
-                                        className = "f-body m-lr-10"
-                                        href={href}
-                                        key = {key}
-                                        index = {index}
-                                    >
-                                        {title}
-                                    </ItemMenu>
-                                ))}
-                            </Box>
-                        </Grid>
-                        <Grid item lg = {2} md = {2} sm = {2} xs={6} justifyContent='flex-end' sx = {{display :{lg: 'flex'}, textAlign:'right'}}>
-                            <Box sx={{ flexGrow: 1,  justifyContent:'flex-end', alignItems:'center', display:{xs:'flex'} }}>
-                                <Button title="Contact us"  className = "bg-gp t-p btn-sm p-lr-10" handler={gotoContact}/>
-                                <Box sx={{ flexGrow: 0, justifyContent:'flex-end', display: { sm: 'none', xs: 'flex' } }}>
-                                    <nav style={{backgroundColor:'black'}}>
-                                        <Drawer
-                                            container={container}
-                                            variant="temporary"
-                                            open={mobileOpen}
-                                            onClose={handleDrawerToggle}
-                                            ModalProps={{
-                                                keepMounted: true, // Better open performance on mobile.
-                                            }}
-                                            sx={{
-                                                display: { xs: 'block', sm: 'none' },
-                                                '& .MuiDrawer-paper': {backgroundColor:'black', color:'white', boxSizing: 'border-box', width: drawerWidth },
-                                            }}
+        <HeaderScroll>
+            <AppBar position="fixed">
+                <Container maxWidth="xl">
+                    <Toolbar disableGutters>
+                        <Grid container direction="row"   justifyContent="space-between"  alignItems="center" spacing={0}>
+                            <Grid item lg = {2} md = {2} sm = {2} xs = {6} sx = {{display :{sm: 'block'}}}>
+                                <Link to="/home">
+                                    <Box
+                                        sx={{ padding: '5px', height: 60, width:80 }}
+                                        component="img"
+                                        alt = "Go to Home"
+                                        src={logoIcon}
+                                    />
+                                </Link>
+                            </Grid>
+                            <Grid item lg = {8} md = {8} sm = {8} xs={6} sx={{display: {sm: 'flex', xs: 'none'}}}>
+                                <Box sx={{ flexGrow: 1, justifyContent:'center', display: { xs: 'none', sm: 'flex' } }}>
+                                    {routes.map(({title, href, index}, key) => (
+                                        <ItemMenu
+                                            className = "f-body m-lr-10"
+                                            href={href}
+                                            key = {key}
+                                            index = {index}
                                         >
-                                        {drawer}
-                                        </Drawer>
-                                    </nav>
-                                    <IconButton
-                                        size="large"
-                                        aria-label="account of current user"
-                                        aria-controls="menu-appbar"
-                                        aria-haspopup="true"
-                                        onClick={handleDrawerToggle}
-                                        color="inherit"
-                                    >
-                                        <MenuIcon />
-                                    </IconButton>
+                                            {title}
+                                        </ItemMenu>
+                                    ))}
                                 </Box>
-                            </Box>
-                            
+                            </Grid>
+                            <Grid item lg = {2} md = {2} sm = {2} xs={6} justifyContent='flex-end' sx = {{display :{lg: 'flex'}, textAlign:'right'}}>
+                                <Box sx={{ flexGrow: 1,  justifyContent:'flex-end', alignItems:'center', display:{xs:'flex'} }}>
+                                    <Button title="Contact us"  className = "bg-gp t-p btn-sm p-lr-10" handler={gotoContact}/>
+                                    <Box sx={{ flexGrow: 0, justifyContent:'flex-end', display: { sm: 'none', xs: 'flex' } }}>
+                                        <nav style={{backgroundColor:'black'}}>
+                                            <Drawer
+                                                container={container}
+                                                variant="temporary"
+                                                open={mobileOpen}
+                                                onClose={handleDrawerToggle}
+                                                ModalProps={{
+                                                    keepMounted: true, // Better open performance on mobile.
+                                                }}
+                                                sx={{
+                                                    display: { xs: 'block', sm: 'none' },
+                                                    '& .MuiDrawer-paper': {backgroundColor:'black', color:'white', boxSizing: 'border-box', width: drawerWidth },
+                                                }}
+                                            >
+                                            {drawer}
+                                            </Drawer>
+                                        </nav>
+                                        <IconButton
+                                            size="large"
+                                            aria-label="account of current user"
+                                            aria-controls="menu-appbar"
+                                            aria-haspopup="true"
+                                            onClick={handleDrawerToggle}
+                                            color="inherit"
+                                        >
+                                            <MenuIcon />
+                                        </IconButton>
+                                    </Box>
+                                </Box>
+                            </Grid>
                         </Grid>
-
-                    </Grid>
-                    
-                    
-                    
-                </Toolbar>
-            </Container>
-        </AppBar>
+                    </Toolbar>
+                </Container>
+            </AppBar>
+        </HeaderScroll>
     );
 }
 

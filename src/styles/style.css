@@ -7,9 +7,38 @@ body {
 body::-webkit-scrollbar{
   display: none;
 }
+input, textarea {
+  font-family: "Satoshi";
+}
+input::-webkit-input-placeholder{
+  font-family: "Satoshi";
+}
+input::-ms-input-placeholder{
+  font-family: "Satoshi";
+}
+input::-moz-placeholder{
+  font-family: "Satoshi";
+}
+input::-moz-placeholder{
+  font-family: "Satoshi";
+}
+
+textarea::-webkit-input-placeholder{
+  font-family: "Satoshi";
+}
+textarea::-ms-input-placeholder{
+  font-family: "Satoshi";
+}
+textarea::-moz-placeholder{
+  font-family: "Satoshi";
+}
+textarea::-moz-placeholder{
+  font-family: "Satoshi";
+}
+
 
 header {
-  background-color: transparent !important;
+  /* background-color: transparent !important; */
   height: 80px;
   box-shadow: none !important;
 
@@ -32,7 +61,7 @@ header {
   cursor: pointer;
 }
 .btn:hover, .btn-lg:hover{
-  background: #ED5C15;
+  background: linear-gradient(90deg, #FF5400, #FFAF36);
 }
 .no-line {
   text-decoration: none !important;
@@ -204,17 +233,18 @@ header {
 }
 .about-card{
   text-align: left;
-  margin-top: 20px;
-  padding: 3em;
+  margin-top: 20px !important;
+  padding: 1em !important;
+  margin: 1rem !important;
   display: flex;
   flex-direction: column !important;
   width: fit-content;
   justify-content: initial;
-  margin-left: auto;
-  margin-right: auto;
-  .photo {
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* .photo {
     margin-left: 0;
-  }
+  } */
 }
 .contact-box {
   margin: 1em;
@@ -273,6 +303,9 @@ header {
   border-radius: 1.2em;
   padding: 2em;
   box-shadow: 0 0 10px #232222
+}
+.common-card:hover{
+  box-shadow: 0 0 10px #795e5e
 }
 
 .dev-card {

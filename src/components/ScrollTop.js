@@ -18,7 +18,7 @@ function ScrollTop(props) {
   // This is only being set here because the demo is in an iframe.
   const trigger = useScrollTrigger({
     disableHysteresis: true,
-    threshold: 1000,
+    threshold: 500,
   });
 
   const handleClick = useCallback(event => {

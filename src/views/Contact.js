@@ -44,10 +44,10 @@ const ContactPage  = () => {
           setNameErr("Name is required.");
           check = false;
         }
-        if (!phone) {
-          setPhoneErr("Phone Number is required.");
-          check = false;
-        }
+        // if (!phone) {
+        //   setPhoneErr("Phone Number is required.");
+        //   check = false;
+        // }
         if (!comment) {
           setCommentErr("Comment is required.");
           check = false;

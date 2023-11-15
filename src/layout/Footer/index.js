@@ -127,7 +127,7 @@ const Footer = () => {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Box sx={{textAlign:'center'}} className= "t-s t-body2 mt-80">@2023 DOKDO. All rights reserved.</Box>
+                <Box sx={{textAlign:'center'}} className= "t-s t-body2 p-tb-40">@2023 DOKDO. All rights reserved.</Box>
             </Container>
         </Box>
     );
