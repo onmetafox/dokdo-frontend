@@ -53,7 +53,7 @@ const ContactPage  = () => {
           check = false;
         }
         return check;
-    }, [email, name, phone, comment]);
+    }, [email, name, comment]);
 
     const handlerContact = useCallback(()=>{
         if(validate()){
