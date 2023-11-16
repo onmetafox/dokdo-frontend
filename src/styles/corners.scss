@@ -71,7 +71,45 @@
 //   CORNER BORDER BUILDER   //
 ///////////////////////////////
 
-@mixin buildCorners ($cornerColor: #000, $cornerSize: 5, $cornerThickness: 5, $contentFontSize: 16, $imageSlice: 50%, $imageWidth:50%) {
+@mixin buildCorners ($cornerColor: #000, $cornerSize: 5, $cornerThickness: 5, $contentFontSize: 16) {
+  // Params:
+  //   - $cornerColor - because the SVG is not inline SVG but background image it cannot inherit the currentColor,
+  //                    therefore the color has to be specified explicitly
+  //   - $cornerSize - just a number in pixels without unit or wit any unit you want 
+  //                 - when just a number is provided relative mode i used (will be vconverted into em)
+  //                 - when number with unit is absolute mode is turned on (the unit will remain)
+  //   - $cornerThickness - just a number in px without unit
+  //                      - when just a number is provided relative mode i used (will be vconverted into em)
+  //                      - when number with unit is absolute mode is turned on (the unit will remain)
+  //   - [$contentFontSize] - used only in relative mode to recalculate previous dimensions into ems for background size
+  //                        - just a number in pixels without unit
+
+  $svgCornerSize: strip-unit($cornerSize);
+  $svgCornerThickness: strip-unit($cornerThickness);
+  $svgViewBox: $svgCornerSize * 2;
+  $svgRectStart: $svgCornerThickness / 2;
+  $svgRectSize: $svgCornerSize * 2 - $svgCornerThickness;
+
+  // absolute mode
+  $borderWidth: $svgCornerThickness * 1px;
+  $borderImageWidth: $svgCornerSize * 1px;
+  
+  // relative mode
+  @if unit($cornerSize) == '' or unit($cornerThickness) == '' {
+    $borderWidth: $svgCornerThickness/$contentFontSize * 1em;
+    $borderImageWidth: $svgCornerSize/$contentFontSize * 1em;
+  }
+
+  border-style: solid;
+  border-width: $borderWidth;
+  border-image-source: svg-uri('<svg viewBox="0 0 #{$svgViewBox} #{$svgViewBox}"><rect x="#{$svgRectStart}" y="#{$svgRectStart}" width="#{$svgRectSize}" height="#{$svgRectSize}" fill="transparent" stroke="#{$cornerColor}" stroke-width="#{$svgCornerThickness}" /></svg>');
+  border-image-slice: 60%;
+  // border-image-width: $borderImageWidth;
+  border-image-width: 13px;
+}
+
+
+@mixin buildCorners1 ($cornerColor: #000, $cornerSize: 5, $cornerThickness: 5, $contentFontSize: 16, $imageSlice: 50%, $imageWidth:50%) {
   // Params:
   //   - $cornerColor - because the SVG is not inline SVG but background image it cannot inherit the currentColor,
   //                    therefore the color has to be specified explicitly
@@ -108,8 +146,6 @@
   border-image-width: $imageWidth;
 }
 
-
-
 ///////////////
 //   USAGE   //
 ///////////////
@@ -131,7 +167,7 @@
   padding: 0.3em 1em 0.3em 1em !important;
   margin-left: 1em;
   margin-right: 1em;
-  @include buildCorners(#ffffff, 20px, 1px, 20px, 50%, 30); // absolute mode: for thin borders you want the border dimensions to be in px
+  @include buildCorners(#ffffff, 20px, 1px); // absolute mode: for thin borders you want the border dimensions to be in px
 }
 
 .corner-4 {
@@ -140,7 +176,7 @@
   margin-left: 1em;
   margin-right: 1em;
   // border-image:  23 / 50px 30px / 1rem round space;
-  @include buildCorners(#D28018, 100px, 5px, 20px, 90%, 10); // absolute mode: for thin borders you want the border dimensions to be in px
+  @include buildCorners1(#D28018, 100px, 5px, 20px, 90%, 60px); // absolute mode: for thin borders you want the border dimensions to be in px
 }
 
 
