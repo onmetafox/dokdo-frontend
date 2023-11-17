@@ -6,7 +6,6 @@ pipeline {
     stages {
         stage('prepare') {
             steps {
-		echo "test"
                 echo "prepare..."
                 nodejs('node 18.18.0') {                   
                     sh "yarn install"
