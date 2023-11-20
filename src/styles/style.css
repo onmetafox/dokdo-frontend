@@ -395,6 +395,9 @@ header {
   .footer-section{
     background-image: url("../assets/images/footer-md-bg.png");
   }
+  .about-section {
+    background-image: url("../assets/images/about-md-bg.png");
+  }
 }
 @media (max-width:600px) {
   .head-section{
@@ -414,6 +417,9 @@ header {
   }
   .footer-section{
     background-image: url("../assets/images/footer-sm-bg.png");
+  }
+  .about-section {
+    background-image: url("../assets/images/about-sm-bg.png");
   }
 }
 @media (max-width: 400px) {

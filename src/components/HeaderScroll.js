@@ -10,7 +10,7 @@ const ScrollHandler = props => {
 
   return React.cloneElement(props.children, {
     style: {
-      background: trigger ? "linear-gradient(180deg, #C78144, #0B0B0F)" : "transparent",
+      background: trigger ? "#0B0B0F" : "transparent",
       transition: trigger ? "0.3s" : "0.5s",
       boxShadow: "none",
     }
