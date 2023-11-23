@@ -80,6 +80,7 @@ const ContactPage  = () => {
             <Grid container direction="row" alignItems="center" justifyContent="flex-start" spacing={5}>
                 <Grid item xs={12} md={12} lg={5}>
                     <Box className="h2 t-p"> Contact us for partnership</Box>
+                    <Box className="fs-s2 t-p p-tb-20">Interested in working with us? Send us an email.</Box>
                 </Grid>
                 <Grid item xs={12} md={12} lg={7}>
                     <Box className="contact-box">

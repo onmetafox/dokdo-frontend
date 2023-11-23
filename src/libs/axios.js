@@ -1,5 +1,5 @@
 import axios from 'axios';
-const api_path = "https://www.dokdo.sh"
+const api_path = "https://dokdo.sh"
 const Axios = axios.create({
   responseType: 'json',
   baseURL: `${api_path}/api`,
