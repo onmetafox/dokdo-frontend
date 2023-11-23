@@ -12,8 +12,8 @@ import tymtIcon from "../assets/images/tymt.png";
 import solarIcon from "../assets/images/solar.png";
 import twiterIcon from "../assets/icons/twitter.svg";
 import tgIcon from "../assets/icons/tg.svg";
-import discordIcon from "../assets/icons/discord.svg";
-import gitIcon from "../assets/icons/github.svg";
+// import discordIcon from "../assets/icons/discord.svg";
+// import gitIcon from "../assets/icons/github.svg";
 import mediumIcon from "../assets/icons/medium.svg";
 
 import ceoImg from "../assets/photo/ceo.png";
