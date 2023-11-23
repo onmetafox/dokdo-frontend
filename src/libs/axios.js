@@ -1,17 +1,11 @@
 import axios from 'axios';
-const api_path = "http://localhost:3001"
+const api_path = "https://www.dokdo.sh"
 const Axios = axios.create({
   responseType: 'json',
   baseURL: `${api_path}/api`,
 });
 
 Axios.interceptors.request.use(function (options) {
-//   const token = storage.get(tokenKey);
-//   if (token) {
-//     options.headers.authorization = 'Bearer ' + token;
-//   } else {
-//     options.headers.authorization = "";
-//   }
   return options;
 });
 

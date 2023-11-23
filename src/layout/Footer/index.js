@@ -113,7 +113,7 @@ const Footer = () => {
                                 <Link title="Contact us" to="/contact" className="ext-link t-p t-body no-line m-tb-10">Contact us</Link>
                             </Grid>
                             <Grid item xs={4}>
-                                <ExternalLink icon={false} title="Discord" href="" className="t-p t-body no-line m-tb-10" />
+                                <ExternalLink icon={false} title="Linkedin" href="https://www.linkedin.com/company/dokdo-sh/" className="t-p t-body no-line m-tb-10" />
                             </Grid>
                             
                         </Grid>
@@ -121,9 +121,9 @@ const Footer = () => {
                             <Grid item xs={4}>
                                 <ExternalLink icon={true} status="inactive" title="Blog" href="https://medium.com/@dokdo_sh" className="t-p t-body no-line m-tb-10" />
                             </Grid>
-                            <Grid item xs={4}>
+                            {/* <Grid item xs={4}>
                                 <ExternalLink icon={false} title="Github" href="/" className="t-p t-body no-line m-tb-10" />
-                            </Grid>
+                            </Grid> */}
                         </Grid>
                     </Grid>
                 </Grid>

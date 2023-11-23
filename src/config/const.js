@@ -103,22 +103,22 @@ export const joinData = [
         detail: "Stay tuned for the freshest news and updates from all around the ecosystem by following us",
         link: "https://twitter.com/dokdo_sh"
     },
-    {
-        icon: discordIcon,
-        title: "Discord Chat",
-        detail: "Exciting news! Our Discord community is on its way. Stay tuned",
-        link: "Github.com"
-    }
+    // {
+    //     icon: discordIcon,
+    //     title: "Discord Chat",
+    //     detail: "Exciting news! Our Discord community is on its way. Stay tuned",
+    //     link: "Github.com"
+    // }
 
 ]
 
 export const developerData = [
-    {
-        icon: gitIcon,
-        title: "Github",
-        detail: "Our GitHub presence is on the horizon. Stay tuned for updates! ",
-        link: "Github.com"
-    },
+    // {
+    //     icon: gitIcon,
+    //     title: "Github",
+    //     detail: "Our GitHub presence is on the horizon. Stay tuned for updates! ",
+    //     link: "Github.com"
+    // },
     {
         icon: mediumIcon,
         title: "Medium blog",
