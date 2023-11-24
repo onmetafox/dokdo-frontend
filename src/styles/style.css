@@ -321,6 +321,10 @@ header {
   background-color: #1A1B23;
   border: solid 1px;
 }
+.product-button:hover{
+  background-color:#1A1B23 !important;
+  background: #1A1B23 !important;
+}
 
 .solar-card {
   background-image: url("../assets/images/solar-card-bg.svg");
