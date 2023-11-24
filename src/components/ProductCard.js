@@ -21,7 +21,7 @@ const ProductCard = (props) => {
                     <Button className = "product-button m-tb-10" title= {button}/>
                     <Box className= "t-p h5 m-tb-10"> {title} </Box>
                     <Box className= "t-p m-tb-10"> {detail} </Box>
-                    <Box onMouseEnter={() =>{if(button !== "Game") setVisible(false)}} onMouseLeave={() => {if(button !== "Game") setVisible(true)}}>
+                    <Box onMouseEnter={() =>{if(button !== "Game") setVisible(false)}} onMouseLeave={() => {if(button !== "Game") setVisible(true)}} sx={{display:'flex', width:'fit-content'}}>
                         {visible && <Link href= {link} className="t-o no-line" title="Read more" icon={true} status="active"/>}
                         {!visible && <Box className="t-o no-line ext-link" sx={{cursor:"pointer"}}>Comming soon</Box>}
                     </Box>
@@ -33,7 +33,7 @@ const ProductCard = (props) => {
                     <Button className = "product-button m-tb-10" title= {button}/>
                     <Box className= "t-p h5 m-tb-10"> {title} </Box>
                     <Box className= "t-p m-tb-10"> {detail} </Box>
-                    <Box onMouseEnter={() => {if(button !== "Game") setVisible(false)}} onMouseLeave={() => {if(button !== "Game") setVisible(true)}}>
+                    <Box onMouseEnter={() => {if(button !== "Game") setVisible(false)}} onMouseLeave={() => {if(button !== "Game") setVisible(true)}} sx={{display:'flex', width:'fit-content'}}>
                         {visible && <Link href= {link} className="t-o no-line" title="Read more" icon={true} status="active" />}
                         {!visible && <Box className="t-o no-line ext-link" sx={{cursor:"pointer"}}>Comming soon</Box>}
                     </Box>
