@@ -18,7 +18,7 @@ const ProductCard = (props) => {
                     <Box component="img" src={image} sx={{width:'80%', marginLeft:2}}></Box>
                 </Grid>
                 <Grid item lg={6} sx={{textAlign: "left"}}>
-                    <Button className = "product-button m-tb-10" title= {button}/>
+                    <Button className = "product-button m-tb-10 no-cursor" title= {button}/>
                     <Box className= "t-p h5 m-tb-10"> {title} </Box>
                     <Box className= "t-p m-tb-10"> {detail} </Box>
                     <Box onMouseEnter={() =>{if(button !== "Game") setVisible(false)}} onMouseLeave={() => {if(button !== "Game") setVisible(true)}} sx={{display:'flex', width:'fit-content'}}>
@@ -30,7 +30,7 @@ const ProductCard = (props) => {
             )}
             {!direct && (<>
                 <Grid item lg={6} sx={{textAlign: "left"}}>
-                    <Button className = "product-button m-tb-10" title= {button}/>
+                    <Button className = "product-button m-tb-10 no-cursor" title= {button}/>
                     <Box className= "t-p h5 m-tb-10"> {title} </Box>
                     <Box className= "t-p m-tb-10"> {detail} </Box>
                     <Box onMouseEnter={() => {if(button !== "Game") setVisible(false)}} onMouseLeave={() => {if(button !== "Game") setVisible(true)}} sx={{display:'flex', width:'fit-content'}}>

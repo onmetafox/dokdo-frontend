@@ -107,7 +107,9 @@ header {
 .btn-border-p {
   border-color: #ED5C15;
 }
-
+.no-cursor{
+  cursor: default;
+}
 .input {
   background-color: #1A1B23;
   border-radius: 8px;
@@ -118,19 +120,19 @@ header {
 }
 
 ::placeholder {
-  color: white;
+  color: rgb(122, 122, 122);
   opacity: 1;
   /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: white;
+  color: rgb(122, 122, 122);
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: white;
+  color: rgb(122, 122, 122);
 }
 
 .p-lr-20 {
