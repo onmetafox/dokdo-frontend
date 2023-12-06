@@ -358,7 +358,26 @@ header {
   max-width: 380px !important;
   box-shadow: 0 0 20px #232222
 }
-
+textarea::-webkit-scrollbar {
+  width: 4px;
+  cursor: pointer !important;
+  padding: 2px;
+  
+}
+textarea::-webkit-scrollbar-track {
+  background: transparent; 
+}
+textarea::-webkit-scrollbar-thumb {
+  background: #393A47; 
+  border-radius: 34px;
+  height: 41px;
+  padding: 10px;
+  cursor: pointer !important;
+}
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #22232b; 
+  cursor: pointer !important;
+}
 .logo-container {
   min-height: 250px;
   justify-content: center;
