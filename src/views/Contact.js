@@ -27,7 +27,7 @@ const ContactPage = () => {
 
   function validatePhoneNumber(phoneNumber) {
     // Regular expression to match a phone number in the format +37495220490
-    const phoneRegex = /^\+\d{11}$/;
+    const phoneRegex = /^\+\d{7,15}$/;
   
     // Check if the phone number matches the regular expression
     if (phoneRegex.test(phoneNumber)) {
