@@ -57,7 +57,7 @@ const Footer = () => {
                         {!show &&
                             <Grid container spacing={5}>
                                 <Grid item xs = {7}>
-                                    <Input handler={setEmail} value = {email} placeHolder = "Subscribe" error={emailErr} sx={{width:'100%'}}/>
+                                    <Input handler={setEmail} value = {email} placeHolder = "Your Email" error={emailErr} sx={{width:'100%'}}/>
                                 </Grid>
                                 <Grid item xs = {5}>
                                     <Button handler = {handlerSubscribe} className="btn-lg bg-gp p-lr-20" title="Subscribe" />  
@@ -66,7 +66,7 @@ const Footer = () => {
                         }
                         {show && (<Stack direction="row" alignItems='center'>
                                 <Box component="img" src={checkIcon}></Box>
-                                <Box className="p-lr-10 t-o f-body">Subscription Successful <br /> You've successfully subscribed to our emails. Stay tuned for updates and news.</Box>
+                                <Box className="p-lr-10 t-o f-body">Subscription Successful <br /> You have successfully subscribed to our newsletter. Stay tuned for the updates and news</Box>
                             </Stack>
                             )
                         }
@@ -78,10 +78,10 @@ const Footer = () => {
                                 <Box className="f-body t-s m-tb-10">Site</Box>
                             </Grid>
                             <Grid item xs={4}>
-                                <Box className="f-body t-s m-tb-10">Join us</Box>
+                                <Box className="f-body t-s m-tb-10">Company</Box>
                             </Grid>
                             <Grid item xs={4}>
-                                <Box className="f-body t-s m-tb-10">Links</Box>
+                                <Box className="f-body t-s m-tb-10">Legal</Box>
                             </Grid>
                         </Grid>
                             

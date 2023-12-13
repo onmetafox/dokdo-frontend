@@ -257,6 +257,7 @@ header {
   .input{
     width: 100%;
     margin-top: 1rem;
+    resize: none;
   }
   .btn {
     margin: 1em;

@@ -27,7 +27,7 @@ export const subscribeSlice = createSlice({
                 if(action.payload.status === "Success"){
                     state.status = action.payload.status;
                     state.subscribedata = action.payload.data;
-                    state.msg = "Subscription Successful <br /> You've successfully subscribed to our emails. Stay tuned for updates and news."
+                    state.msg = "Subscription Successful <br /> You have successfully subscribed to our newsletter. Stay tuned for the updates and news"
                 }
                 if(action.payload.status==="Failure" && action.payload.errorCode === 29){
                     state.msg = "This email address is already subscribed";

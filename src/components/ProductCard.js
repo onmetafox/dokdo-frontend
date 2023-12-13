@@ -23,7 +23,7 @@ const ProductCard = (props) => {
                     <Box className= "t-p m-tb-10"> {detail} </Box>
                     <Box onMouseEnter={() =>{if(button !== "Game") setVisible(false)}} onMouseLeave={() => {if(button !== "Game") setVisible(true)}} sx={{display:'flex', width:'fit-content'}}>
                         {visible && <Link href= {link} className="t-o no-line" title="Read more" icon={true} status="active"/>}
-                        {!visible && <Box className="t-o no-line ext-link" sx={{cursor:"pointer"}}>Comming soon</Box>}
+                        {!visible && <Box className="t-o no-line ext-link" sx={{cursor:"pointer"}}>Coming soon</Box>}
                     </Box>
                 </Grid>
             </>
@@ -35,7 +35,7 @@ const ProductCard = (props) => {
                     <Box className= "t-p m-tb-10"> {detail} </Box>
                     <Box onMouseEnter={() => {if(button !== "Game") setVisible(false)}} onMouseLeave={() => {if(button !== "Game") setVisible(true)}} sx={{display:'flex', width:'fit-content'}}>
                         {visible && <Link href= {link} className="t-o no-line" title="Read more" icon={true} status="active" />}
-                        {!visible && <Box className="t-o no-line ext-link" sx={{cursor:"pointer"}}>Comming soon</Box>}
+                        {!visible && <Box className="t-o no-line ext-link" sx={{cursor:"pointer"}}>Coming soon</Box>}
                     </Box>
                 </Grid>
                 <Grid item lg={6}>

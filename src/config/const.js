@@ -77,14 +77,14 @@ export const productData = [
     {
         button: "Platform for games",
         title: "Tymt",
-        detail: "Developed by Dokdo, the same innovative minds behind District 53 Metaverse, tymt is a promising solution set to revolutionise the gaming industry. This next generation game launcher bridges the gap between traditional, blockchain, and Web3 games, overcoming the challenges that have often hampered blockchain gaming. District 53, a voxel-based Metaverse game utilising the Solar Blockchain, had drawn significant attention and reached.",
+        detail: "Developed by Dokdo, the same innovative minds behind District 53 Metaverse, tymt is a promising solution set to revolutionize the gaming industry. This next-generation game launcher bridges the gap between traditional and Web3 games, overcoming the challenges that have often hampered blockchain gaming.",
         image: tymtIcon,
         link: "https://medium.com/@district53"
     },
     {
-        button: "Wallet",
+        button: "Fintech",
         title: "Solar Card",
-        detail: "Digital payments with crypto debit cards and IBAN accounts combined with concierge services. Digital payments with crypto debit cards and IBAN account combined with concierge services.",
+        detail: "The Solar Card is your gateway to the world of crypto and fiat transactions. It offers a flexible, secure way to manage your finances, with features like fiat wallets, custodian crypto wallets by Kraken, and an internal SXP wallet, including prepaid options without KYC up to 5000 euros.",
         image: solarIcon,
         link: "https://medium.com/@district53"
     }
