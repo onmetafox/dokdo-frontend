@@ -60,10 +60,7 @@ const ContactPage = () => {
   const checkEmail = useCallback(() => {
     let check = true;
     setEmailErr('');
-    if (!email) {
-      setEmailErr('Email is required!');
-      check = false;
-    } else if (!validateEmail(email)) {
+    if (email && !validateEmail(email)) {
       setEmailErr('Email is not valid!');
       check = false;
     }
@@ -73,35 +70,12 @@ const ContactPage = () => {
   const checkPhone = useCallback(() => {
     let check = true;
     setPhoneErr('');
-    if (!phone) {
-      setPhoneErr('Phone Number is required.');
-      check = false;
-    } else if (!validatePhoneNumber(phone)) {
+    if (phone && !validatePhoneNumber(phone)) {
       setPhoneErr('Phone number is not valid!');
       check = false;
     }
     return check;
   }, [phone]);
-
-  const checkName = useCallback(() => {
-    let check = true;
-    setNameErr('');
-    if (!name) {
-      setNameErr('Name is required.');
-      check = false;
-    }
-    return check;
-  }, [name]);
-
-  const checkComment = useCallback(() => {
-    let check = true;
-    setCommentErr('');
-    if (!comment) {
-      setCommentErr('Comment is required.');
-      check = false;
-    }
-    return check;
-  }, [comment]);
 
   const validate = useCallback(() => {
     let check = true;
@@ -167,7 +141,7 @@ const ContactPage = () => {
             <Box className="contact-box">
               <Input handler={handleEmailChange} value={email} placeHolder="Email" error={emailErr} onBlur={checkEmail} />
               <Input handler={handlePhoneNumberChange} value={phone} placeHolder="Phone number" error={phoneErr} onBlur={checkPhone} />
-              <Input handler={handleNameChange} value={name} placeHolder="Name" error={nameErr} onBlur={checkName} />
+              <Input handler={handleNameChange} value={name} placeHolder="Name" error={nameErr} />
               <Input
                 handler={handleCommentChange}
                 value={comment}
@@ -175,7 +149,6 @@ const ContactPage = () => {
                 multiple={true}
                 rows={4}
                 error={commentErr}
-                onBlur={checkComment}
               />
               <Button handler={handlerContact} className="btn bg-gp t-p btn-sm p-lr-10" title="Send" />
             </Box>
