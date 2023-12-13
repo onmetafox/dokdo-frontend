@@ -119,7 +119,7 @@ const Footer = () => {
                         </Grid>
                         <Grid container>
                             <Grid item xs={4}>
-                                <ExternalLink icon={true} status="inactive" title="Blog" href="https://medium.com/@dokdo_sh" className="t-p t-body no-line m-tb-10" />
+                                <ExternalLink icon={true} status="inactive" title="Blog" href="https://medium.com/@dokdo_shh" className="t-p t-body no-line m-tb-10" />
                             </Grid>
                             {/* <Grid item xs={4}>
                                 <ExternalLink icon={false} title="Github" href="/" className="t-p t-body no-line m-tb-10" />

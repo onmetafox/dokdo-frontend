@@ -31,7 +31,7 @@ const HeadSection = () => {
                             <Grid item lg={6} md = {6} sm = {6}>
                                 <Box className="h0 t-p mt-40">DOKDO</Box>
                                 <TextTransition className = "h1 t-o trans-text" style={{display: 'flex', justifyContent: 'center'}} springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
-                                <Box className="fs-s2 t-p mt-20">Dokdo is a business dedicated to enhancing the Solar Network ecosystem.</Box>
+                                {/* <Box className="fs-s2 t-p mt-20">Dokdo is a business dedicated to enhancing the Solar Network ecosystem.</Box> */}
                                 <Stack direction="row" className="mt-20" sx={{textAlign:'center'}} spacing={2}>
                                     <Link href="https://t.me/dokdo_official" icon={false} className="btn-lg bg-gp p-lr-20 no-line" title="Join community" />
                                 </Stack>

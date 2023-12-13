@@ -41,7 +41,7 @@ const routes = [
         index:false
     },
     {
-        title: 'Private Policy',
+        title: 'Privacy Policy',
         href: '/policy',
         component: Policy,
         children: [],
