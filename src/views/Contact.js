@@ -25,21 +25,17 @@ const ContactPage = () => {
   const [title, setTitle] = useState();
   const [success, setSuccess] = useState(false);
 
-  const validatePhoneNumber = phoneNumber => {
-    var phoneRegex = /^\d{3}-\d{3}-\d{4}$/;
-    if (phoneNumber.length === 12 && phoneRegex.test(phoneNumber)) return true;
-    else return false;
-  };
-
-  const formatPhoneNumber = input => {
-    // Remove non-numeric characters from the input except "-"
-    var numericInput = input.replace(/[^\d-]/g, '');
-
-    // Apply the phone number format (###-###-####)
-    var formattedInput = numericInput.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
-
-    return formattedInput;
-  };
+  function validatePhoneNumber(phoneNumber) {
+    // Regular expression to match a phone number in the format +37495220490
+    const phoneRegex = /^\+\d{11}$/;
+  
+    // Check if the phone number matches the regular expression
+    if (phoneRegex.test(phoneNumber)) {
+      return true; // Phone number is valid
+    } else {
+      return false; // Phone number is invalid
+    }
+  }
 
   const handleEmailChange = value => {
     setEmailErr('');
@@ -48,8 +44,7 @@ const ContactPage = () => {
   
   const handlePhoneNumberChange = value => {
     setPhoneErr('');
-    const formattedInput = formatPhoneNumber(value);
-    setPhone(formattedInput);
+    setPhone(value);
   };
 
   const handleNameChange = value => {
