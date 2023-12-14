@@ -41,6 +41,7 @@ header {
   /* background-color: transparent !important; */
   height: 80px;
   box-shadow: none !important;
+  justify-content: center;
 
 }
 .divider{
@@ -114,7 +115,7 @@ header {
 .input {
   background-color: #1A1B23;
   border-radius: 8px;
-  border-color: #393A47;
+  border: 1px solid #393A47;
   padding: 10px;
   min-height: 25px;
   color: white;
