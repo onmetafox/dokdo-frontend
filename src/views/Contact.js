@@ -139,10 +139,10 @@ const ContactPage = () => {
           </Grid>
           <Grid item xs={12} md={12} lg={7}>
             <Box className="contact-box">
-              <Box sx={{ display: "flex" }}><Input handler={handleEmailChange} value={email} placeHolder="Email" error={emailErr} onBlur={checkEmail} /></Box>
-              <Box sx={{ display: "flex" }}><Input handler={handlePhoneNumberChange} value={phone} placeHolder="Phone number" error={phoneErr} onBlur={checkPhone} /></Box>
-              <Box sx={{ display: "flex" }}><Input handler={handleNameChange} value={name} placeHolder="Name" error={nameErr} /></Box>
-              <Box sx={{ display: "flex" }}><Input
+              <Box sx={{ display: "flex", flexDirection: "column" }}><Input handler={handleEmailChange} value={email} placeHolder="Email" error={emailErr} onBlur={checkEmail} /></Box>
+              <Box sx={{ display: "flex", flexDirection: "column" }}><Input handler={handlePhoneNumberChange} value={phone} placeHolder="Phone number" error={phoneErr} onBlur={checkPhone} /></Box>
+              <Box sx={{ display: "flex", flexDirection: "column" }}><Input handler={handleNameChange} value={name} placeHolder="Name" error={nameErr} /></Box>
+              <Box sx={{ display: "flex", flexDirection: "column" }}><Input
                   handler={handleCommentChange}
                   value={comment}
                   placeHolder="Comment"
