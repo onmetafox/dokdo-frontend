@@ -1,3 +1,8 @@
+:root {
+  --color-choc: #C78144;
+  --color-supernova: #FFAF36;
+  --color-brandy: #ED5C15;
+}
 body {
   margin: 0;
   background-color: black;
@@ -79,6 +84,10 @@ header {
   display: flex;
   align-items: center;
   text-align: left;
+}
+
+.ext-link:hover {
+  color: var(--color-brandy)
 }
 
 .btn-sm {
@@ -448,6 +457,10 @@ textarea::-webkit-scrollbar-thumb:hover {
   }
   .about-section {
     background-image: url("../assets/images/about-sm-bg.png");
+  }
+  .v-divider {
+    border-right-width: 0 !important;
+    border-color: transparent !important;
   }
 }
 @media (max-width: 400px) {

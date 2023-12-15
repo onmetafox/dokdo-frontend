@@ -23,12 +23,12 @@ const DokdoSection = () => {
                                 <Box className="fs-57-b t-p">8 years</Box>
                                 <Box className="t-s"> Of experience in crypto space</Box>
                             </Stack>
-                            <Divider orientation="vertical" variant="middle" light = {true} sx={{marginLeft:5, marginRight:5, borderColor:"#393A47", height:'3rem', marginTop:'auto', marginBottom:'auto'}} flexItem />
+                            <Divider className="v-divider" orientation="vertical" variant="middle" light = {true} sx={{marginLeft:5, marginRight:5, borderColor:"#393A47", height:'3rem', marginTop:'auto', marginBottom:'auto'}} flexItem />
                             <Stack direction="column">
                                 <Box className="fs-57-b t-p">5K+</Box>
                                 <Box className="t-s">Community</Box>
                             </Stack>
-                            <Divider orientation="vertical" variant="middle" light = {true} sx={{marginLeft:5, marginRight:5,  borderColor:"#393A47", height:'3rem', marginTop:'auto', marginBottom:'auto'}} flexItem/>
+                            <Divider className="v-divider" orientation="vertical" variant="middle" light = {true} sx={{marginLeft:5, marginRight:5,  borderColor:"#393A47", height:'3rem', marginTop:'auto', marginBottom:'auto'}} flexItem/>
                             <Stack direction="column">
                                 <Box className="fs-57-b t-p">04</Box>
                                 <Box className="t-s">Products in development</Box>

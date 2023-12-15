@@ -87,39 +87,39 @@ const Footer = () => {
                             
                         <Grid container>
                             <Grid item xs={4}>
-                                <Link  to="/home" className="ext-link t-p t-body no-line m-tb-10">Home</Link>
+                                <Link  to="/home" className="ext-link t-body no-line m-tb-10">Home</Link>
                             </Grid>
                             <Grid item xs={4}>
-                                <ExternalLink icon={false} title="Telegram" href="https://t.me/dokdo_official" className="t-p t-body no-line m-tb-10" />
+                                <ExternalLink icon={false} title="Telegram" href="https://t.me/dokdo_official" className="t-body no-line m-tb-10" />
                             </Grid>
                             <Grid item xs={4}>
-                                <Link  to="/terms" className="ext-link t-p t-body no-line m-tb-10">Terms and Conditions</Link>
+                                <Link  to="/terms" className="ext-link t-body no-line m-tb-10">Terms and Conditions</Link>
                             </Grid>
                         </Grid>
                         <Grid container>
                             <Grid item xs={4}>
-                                <Link to="/about" className="ext-link t-p t-body no-line m-tb-10">About us</Link>
+                                <Link to="/about" className="ext-link t-body no-line m-tb-10">About us</Link>
                             </Grid>
                             <Grid item xs={4}>
-                                <ExternalLink icon={false} title="Twitter" href="https://twitter.com/dokdo_sh" className="t-p t-body no-line m-tb-10" />
+                                <ExternalLink icon={false} title="Twitter" href="https://twitter.com/dokdo_sh" className="t-body no-line m-tb-10" />
                             </Grid>
                             <Grid item xs={4}>
-                                <Link  to="/policy" className="ext-link t-p t-body no-line m-tb-10">Privacy Policy</Link>
+                                <Link  to="/policy" className="ext-link t-body no-line m-tb-10">Privacy Policy</Link>
                             </Grid>
 
                         </Grid>
                         <Grid container>
                             <Grid item xs={4}>
-                                <Link title="Contact us" to="/contact" className="ext-link t-p t-body no-line m-tb-10">Contact us</Link>
+                                <Link title="Contact us" to="/contact" className="ext-link t-body no-line m-tb-10">Contact us</Link>
                             </Grid>
                             <Grid item xs={4}>
-                                <ExternalLink icon={false} title="Linkedin" href="https://www.linkedin.com/company/dokdo-sh/" className="t-p t-body no-line m-tb-10" />
+                                <ExternalLink icon={false} title="Linkedin" href="https://www.linkedin.com/company/dokdo-sh/" className="t-body no-line m-tb-10" />
                             </Grid>
                             
                         </Grid>
                         <Grid container>
                             <Grid item xs={4}>
-                                <ExternalLink icon={true} status="inactive" title="Blog" href="https://medium.com/@dokdo_shh" className="t-p t-body no-line m-tb-10" />
+                                <ExternalLink icon={true} status="inactive" title="Blog" href="https://medium.com/@dokdo_shh" className="t-body no-line m-tb-10" />
                             </Grid>
                             {/* <Grid item xs={4}>
                                 <ExternalLink icon={false} title="Github" href="/" className="t-p t-body no-line m-tb-10" />

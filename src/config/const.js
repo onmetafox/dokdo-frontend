@@ -145,21 +145,21 @@ export const aboutData = [
     {
         image: tpmImg,
         title: "Samvel Barseghyan",
-        detail: "TPM",
+        detail: "Full Stack Developer",
         link: "Linkedin",
         href: "https://www.linkedin.com/in/samvel-barseghyan-305085195/"
     },
     {
         image: developerImg,
         title: "Kang Jun Rui",
-        detail: "Full-Stack Developer",
+        detail: "Lead Full-Stack Developer",
         link: "Linkedin",
         href: "https://www.linkedin.com/in/onmetafox/"
     },
     {
         image: designerImg,
         title: "Taras Oliinyk",
-        detail: "Product Designer",
+        detail: "Lead UI/UX designer ",
         link: "Linkedin",
         href: "https://www.linkedin.com/in/taras-oliinyk/"
     }
