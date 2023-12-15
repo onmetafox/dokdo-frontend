@@ -26,8 +26,8 @@ const ContactPage = () => {
   const [success, setSuccess] = useState(false);
 
   function validatePhoneNumber(phoneNumber) {
-    // Regular expression to match a phone number in the format +37495220490
-    const phoneRegex = /^\+\d{7,15}$/;
+    // Regular expression to match a phone number in the format +37495220490 or 0047495220490
+    const phoneRegex = /^(\+|00)\d{7,15}$/;
   
     // Check if the phone number matches the regular expression
     if (phoneRegex.test(phoneNumber)) {
@@ -139,9 +139,9 @@ const ContactPage = () => {
           </Grid>
           <Grid item xs={12} md={12} lg={7}>
             <Box className="contact-box">
+              <Box sx={{ display: "flex", flexDirection: "column" }}><Input handler={handleNameChange} value={name} placeHolder="Full Name" error={nameErr} /></Box>
               <Box sx={{ display: "flex", flexDirection: "column" }}><Input handler={handleEmailChange} value={email} placeHolder="Email" error={emailErr} onBlur={checkEmail} /></Box>
               <Box sx={{ display: "flex", flexDirection: "column" }}><Input handler={handlePhoneNumberChange} value={phone} placeHolder="Phone number" error={phoneErr} onBlur={checkPhone} /></Box>
-              <Box sx={{ display: "flex", flexDirection: "column" }}><Input handler={handleNameChange} value={name} placeHolder="Name" error={nameErr} /></Box>
               <Box sx={{ display: "flex", flexDirection: "column" }}><Input
                   handler={handleCommentChange}
                   value={comment}
