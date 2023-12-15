@@ -86,7 +86,7 @@ header {
   text-align: left;
 }
 
-.ext-link:hover {
+.ext-link:not(.non-hover):hover {
   color: var(--color-brandy)
 }
 

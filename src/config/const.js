@@ -138,7 +138,7 @@ export const aboutData = [
     {
         image: ctoImg,
         title: "Arman Stepanyan",
-        detail: "CTO",
+        detail: "Full Stack Developer",
         link: "Linkedin",
         href: "https://www.linkedin.com/in/arman-stepanyan-67412a146/"
     },
