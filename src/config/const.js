@@ -152,7 +152,7 @@ export const aboutData = [
     {
         image: developerImg,
         title: "Kang Jun Rui",
-        detail: "Lead Full-Stack Developer",
+        detail: "Full-Stack Developer",
         link: "Linkedin",
         href: "https://www.linkedin.com/in/onmetafox/"
     },
