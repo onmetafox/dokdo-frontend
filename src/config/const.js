@@ -150,13 +150,6 @@ export const aboutData = [
         href: "https://www.linkedin.com/in/samvel-barseghyan-305085195/"
     },
     {
-        image: developerImg,
-        title: "Kang Jun Rui",
-        detail: "Full-Stack Developer",
-        link: "Linkedin",
-        href: "https://www.linkedin.com/in/onmetafox/"
-    },
-    {
         image: designerImg,
         title: "Taras Oliinyk",
         detail: "Lead UI/UX designer ",
