@@ -25,22 +25,22 @@ export const solarData = [
     {
         image: solar1Icon,
         title:"DPoS Consensus",
-        detail: "The Solar Blockchain employs a forked Delegated Proof of Stake Consensus from ARK Core, featuring 53 block producers in its network"
+        detail: "The Solar Blockchain employs a forked Delegated Proof of Stake Consensus from ARK Core, featuring 53 block producers in its network."
     },
     {
         image: solar2Icon,
         title:"Fast & Secure",
-        detail: "The Solar Blockchain excels with 53 block producers and a rapid 8-second block-time, cementing its status in the blockchain industry"
+        detail: "The Solar Blockchain excels with 53 block producers and a rapid 8-second block-time, cementing its status in the blockchain industry."
     },
     {
         image: solar3Icon,
         title:"Voting",
-        detail: "You can engage with the network as a block producer or vote for one of the 53 producers to potentially earn network commissions"
+        detail: "You can engage with the network as a block producer or vote for one of the 53 producers to potentially earn network commissions."
     },
     {
         image: solar4Icon,
         title:"Advanced Ecosystem",
-        detail: "Solar offers developers and users a robust toolkit, fostering innovation to keep the Solar Blockchain at the industry forefront"
+        detail: "Solar offers developers and users a robust toolkit, fostering innovation to keep the Solar Blockchain at the industry forefront."
     }
 ]
 
