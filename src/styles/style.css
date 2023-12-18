@@ -105,6 +105,16 @@ header {
   top: 0;
 }
 
+.terms-section{
+  text-align: center;
+  height: 100vh;
+}
+.terms-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn-s-d {
   border: solid 1px;
   background-color: black;
@@ -395,6 +405,7 @@ textarea::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   align-items: center;
   display: flex;
+  padding-left: 40px;
 }
 .img-rotate{
   animation: rotateImg 7s linear infinite;

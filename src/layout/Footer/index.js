@@ -98,10 +98,10 @@ const Footer = () => {
                         </Grid>
                         <Grid container>
                             <Grid item xs={4}>
-                                <Link to="/about" className="ext-link t-body no-line m-tb-10">About us</Link>
+                                <Link to="/about" className="ext-link t-body no-line m-tb-10">Our team</Link>
                             </Grid>
                             <Grid item xs={4}>
-                                <ExternalLink icon={false} title="Twitter" href="https://twitter.com/dokdo_sh" className="t-body no-line m-tb-10" />
+                                <ExternalLink icon={false} title="X" href="https://x.com/dokdo_sh" className="t-body no-line m-tb-10" />
                             </Grid>
                             <Grid item xs={4}>
                                 <Link  to="/policy" className="ext-link t-body no-line m-tb-10">Privacy Policy</Link>
@@ -119,7 +119,7 @@ const Footer = () => {
                         </Grid>
                         <Grid container>
                             <Grid item xs={4}>
-                                <ExternalLink icon={true} status="inactive" title="Blog" href="https://medium.com/@dokdo_shh" className="t-body no-line m-tb-10" />
+                                <ExternalLink icon={true} status="inactive" title="Blog" href="https://medium.com/@dokdo_sh" className="t-body no-line m-tb-10" />
                             </Grid>
                             {/* <Grid item xs={4}>
                                 <ExternalLink icon={false} title="Github" href="/" className="t-p t-body no-line m-tb-10" />

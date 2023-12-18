@@ -94,14 +94,14 @@ export const joinData = [
     {
         icon: tgIcon,
         title: "Community Chat",
-        detail: "Feel free to ask any questions and have friendly chats with people from around the world",
+        detail: "Feel free to ask any questions and have friendly chats with people from around the world.",
         link: "https://t.me/dokdo_official "
     },
     {
         icon: twiterIcon,
-        title: "Twitter",
-        detail: "Stay tuned for the freshest news and updates from all around the ecosystem by following us",
-        link: "https://twitter.com/dokdo_sh"
+        title: "X",
+        detail: "Stay tuned for the freshest news and updates from all around the ecosystem by following us.",
+        link: "https://x.com/dokdo_sh"
     },
     // {
     //     icon: discordIcon,
@@ -122,7 +122,7 @@ export const developerData = [
     {
         icon: mediumIcon,
         title: "Medium blog",
-        detail: "Please visit our Medium blog for the latest articles and updates",
+        detail: "Please visit our Medium blog for the latest articles and updates.",
         link: "https://medium.com/@dokdo_sh"
     }
 ]
@@ -132,8 +132,8 @@ export const aboutData = [
         image: ceoImg,
         title: "Nayiem Willems",
         detail: "CEO",
-        link: "Twitter",
-        href: "https://twitter.com/WillemsTRA"
+        link: "X",
+        href: "https://x.com/WillemsTRA"
     },
     {
         image: ctoImg,
@@ -148,13 +148,6 @@ export const aboutData = [
         detail: "Full Stack Developer",
         link: "Linkedin",
         href: "https://www.linkedin.com/in/samvel-barseghyan-305085195/"
-    },
-    {
-        image: developerImg,
-        title: "Kang Jun Rui",
-        detail: "Full-Stack Developer",
-        link: "Linkedin",
-        href: "https://www.linkedin.com/in/onmetafox/"
     },
     {
         image: designerImg,
