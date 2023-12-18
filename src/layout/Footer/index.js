@@ -78,7 +78,7 @@ const Footer = () => {
                                 <Box className="f-body t-s m-tb-10">Site</Box>
                             </Grid>
                             <Grid item xs={4}>
-                                <Box className="f-body t-s m-tb-10">Company</Box>
+                                <Box className="f-body t-s m-tb-10">Social</Box>
                             </Grid>
                             <Grid item xs={4}>
                                 <Box className="f-body t-s m-tb-10">Legal</Box>
