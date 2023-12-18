@@ -134,7 +134,7 @@ const ContactPage = () => {
       <Container maxWidth="xl">
         <Grid container direction="row" alignItems="center" justifyContent="flex-start" spacing={5}>
           <Grid item xs={12} md={12} lg={5}>
-            <Box className="h2 t-p"> Contact us for partnership</Box>
+            <Box className="fs-57-b t-p"> Contact us for partnership</Box>
             <Box className="fs-s2 t-p p-tb-20">Interested in working with us? Let's get acquainted.</Box>
           </Grid>
           <Grid item xs={12} md={12} lg={7}>
@@ -150,7 +150,7 @@ const ContactPage = () => {
                   rows={4}
                   error={commentErr}
                 /></Box>
-              <Button handler={handlerContact} className="btn bg-gp t-p btn-sm p-lr-10" title="Send" />
+              <Button handler={handlerContact} className="ml-0 bg-gp t-p btn-sm p-lr-10" title="Send" />
             </Box>
           </Grid>
         </Grid>
