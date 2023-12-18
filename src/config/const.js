@@ -99,7 +99,7 @@ export const joinData = [
     },
     {
         icon: xIcon,
-        title: "X",
+        title: "X.com",
         detail: "Stay tuned for the freshest news and updates from all around the ecosystem by following us.",
         link: "https://x.com/dokdo_sh"
     },
@@ -132,7 +132,7 @@ export const aboutData = [
         image: ceoImg,
         title: "Nayiem Willems",
         detail: "CEO",
-        link: "X",
+        link: "X.com",
         href: "https://x.com/WillemsTRA"
     },
     {

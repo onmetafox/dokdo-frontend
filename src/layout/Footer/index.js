@@ -101,7 +101,7 @@ const Footer = () => {
                                 <Link to="/about" className="ext-link t-body no-line m-tb-10">Our team</Link>
                             </Grid>
                             <Grid item xs={4}>
-                                <ExternalLink icon={false} title="X" href="https://x.com/dokdo_sh" className="t-body no-line m-tb-10" />
+                                <ExternalLink icon={false} title="X.com" href="https://x.com/dokdo_sh" className="t-body no-line m-tb-10" />
                             </Grid>
                             <Grid item xs={4}>
                                 <Link  to="/policy" className="ext-link t-body no-line m-tb-10">Privacy Policy</Link>
