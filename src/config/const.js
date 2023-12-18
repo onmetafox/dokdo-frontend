@@ -20,7 +20,7 @@ import ceoImg from "../assets/photo/ceo.png";
 import ctoImg from "../assets/photo/cto.png";
 import tpmImg from "../assets/photo/tpm.png";
 import designerImg from "../assets/photo/designer.png";
-import developerImg from "../assets/photo/developer.png";
+// import developerImg from "../assets/photo/developer.png";
 export const solarData = [
     {
         image: solar1Icon,

@@ -1,5 +1,7 @@
 import React from "react";
-import { Stack, Divider, Container, Box } from "@mui/material";
+// import { Stack, Divider, Container, Box } from "@mui/material";
+import { Box } from "@mui/material";
+
 const Policy = ({route}) => {
     // const middleDot = '\u00B7';
     // return <Box className = "p-tb-80">

@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Box, Stack, Divider } from "@mui/material";
+// import { Stack, Divider, Container, Box } from "@mui/material";
+import { Box } from "@mui/material";
 
 const Terms = ({route}) => {
     // const middleDot = '\u00B7';
