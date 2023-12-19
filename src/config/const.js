@@ -76,7 +76,7 @@ export const productData = [
     },
     {
         button: "Platform for games",
-        title: "Tymt",
+        title: "tymt",
         detail: "Developed by Dokdo, the same innovative minds behind District 53 Metaverse, tymt is a promising solution set to revolutionize the gaming industry. This next-generation game launcher bridges the gap between traditional and Web3 games, overcoming the challenges that have often hampered blockchain gaming.",
         image: tymtIcon,
         link: "https://medium.com/@district53"
