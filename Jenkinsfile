@@ -30,12 +30,14 @@ node {
         echo "Message - ${ex.getMessage()}"
     }
     finally {
-        cleanWs(cleanWhenNotBuilt: false,
-                deleteDirs: true,
-                disableDeferredWipeout: true,
-                notFailBuild: true,
-                patterns: [[pattern: '.gitignore', type: 'INCLUDE'],
-                            [pattern: '.propsfile', type: 'EXCLUDE']])
+        if(env.JOB_ENV == 'version') {
+            cleanWs(cleanWhenNotBuilt: false,
+                    deleteDirs: true,
+                    disableDeferredWipeout: true,
+                    notFailBuild: true,
+                    patterns: [[pattern: '.gitignore', type: 'INCLUDE'],
+                                [pattern: '.propsfile', type: 'EXCLUDE']])
+        }
     }
 }
 
