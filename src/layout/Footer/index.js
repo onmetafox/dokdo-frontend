@@ -17,7 +17,8 @@ const Footer = () => {
     const status = useSelector(selectStatus)
     const [email, setEmail] = useState();
     const [emailErr, setEmailErr] = useState();
-    const [show, setShow] = useState(false)
+    const [show, setShow] = useState(false);
+    const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
     const validate = useCallback(()=>{
         let check = true;
         setEmailErr('');
@@ -31,6 +32,10 @@ const Footer = () => {
         }
         return check;
     },[email])
+
+    useEffect(() => {
+        setCurrentYear(new Date().getFullYear());
+    }, []);
 
     useEffect(()=>{
         if(status === "Success"){
@@ -127,7 +132,7 @@ const Footer = () => {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Box sx={{textAlign:'center'}} className= "t-s t-body2 p-tb-40">@2023 DOKDO. All rights reserved.</Box>
+                <Box sx={{textAlign:'center'}} className= "t-s t-body2 p-tb-40">@{currentYear} DOKDO. All rights reserved.</Box>
             </Container>
         </Box>
     );
