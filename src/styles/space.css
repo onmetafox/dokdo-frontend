@@ -27,9 +27,6 @@
     margin-top: 1em !important;
     margin-bottom: 1em !important;
 }
-.ml-0{
-    margin-left: 0px !important;
-}
 
 .mt-80{
     margin-top: 8em !important;
@@ -73,10 +70,6 @@
 .p-tb-80{
     padding-top: 8em;
     padding-bottom: 8em;
-}
-
-.p-t-80{
-    padding-top: 8em;
 }
 
 .ta-center{

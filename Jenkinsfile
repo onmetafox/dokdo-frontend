@@ -1,43 +1,34 @@
 #!/usr/bin/env groovy
 
-node {
-    env.SERVICE = 'dokdo-frontend'
-    env.RESTART = false
-    env.SOURCE = 'build'
+pipeline {
+    agent any
 
-    try {
-        load "${JENKINS_HOME}/scripts/pipeline.head.groovy"
-
-        stage('Prepare') {
-            echo "prepare..."
-            nodejs('node 18.18.0') {                   
-                sh "yarn install"
-            }  
-        }
-
-	    stage('Build') {
-            echo "build started..."
-            nodejs('node 18.18.0') {  
-                sh "npm run build"
+    stages {
+        stage('prepare') {
+            steps {
+                echo "prepare..."
+                nodejs('node 18.18.0') {                   
+                    sh "yarn install"
+                }  
             }
         }
 
-        load "${JENKINS_HOME}/scripts/pipeline.post.groovy"
-    }
-    catch(Exception ex) {
-        currentBuild.result = "FAILED"
-        echo "Error during build - ${ex.toString()}"
-        echo "Message - ${ex.getMessage()}"
-    }
-    finally {
-        if(env.JOB_ENV == 'version') {
-            cleanWs(cleanWhenNotBuilt: false,
-                    deleteDirs: true,
-                    disableDeferredWipeout: true,
-                    notFailBuild: true,
-                    patterns: [[pattern: '.gitignore', type: 'INCLUDE'],
-                                [pattern: '.propsfile', type: 'EXCLUDE']])
+	    stage('build') {
+            steps {
+                echo "build started..."
+                nodejs('node 18.18.0') {  
+                    sh "npm run build"
+                }
+            }
+        }
+
+
+        stage('deploy') {
+            steps {
+                echo "deploy started.."
+                sh "ls build -l"
+                sshPublisher(publishers: [sshPublisherDesc(configName: 'dokdo-server-dev', transfers: [sshTransfer(cleanRemote: true, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: 'dokdo-frontend', remoteDirectorySDF: false, removePrefix: '', sourceFiles: 'build/**/*')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+            }
         }
     }
 }
-

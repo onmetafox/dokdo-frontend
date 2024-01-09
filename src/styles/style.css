@@ -1,8 +1,3 @@
-:root {
-  --color-choc: #C78144;
-  --color-supernova: #FFAF36;
-  --color-brandy: #ED5C15;
-}
 body {
   margin: 0;
   background-color: black;
@@ -46,7 +41,6 @@ header {
   /* background-color: transparent !important; */
   height: 80px;
   box-shadow: none !important;
-  justify-content: center;
 
 }
 .divider{
@@ -83,11 +77,6 @@ header {
   padding-right: 5px;
   display: flex;
   align-items: center;
-  text-align: left;
-}
-
-.ext-link:not(.non-hover):hover {
-  color: var(--color-brandy)
 }
 
 .btn-sm {
@@ -103,16 +92,6 @@ header {
   position: absolute;
   right: 15%;
   top: 0;
-}
-
-.terms-section{
-  text-align: center;
-  height: 100vh;
-}
-.terms-content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .btn-s-d {
@@ -134,7 +113,7 @@ header {
 .input {
   background-color: #1A1B23;
   border-radius: 8px;
-  border: 1px solid #393A47;
+  border-color: #393A47;
   padding: 10px;
   min-height: 25px;
   color: white;
@@ -277,7 +256,6 @@ header {
   .input{
     width: 100%;
     margin-top: 1rem;
-    resize: none;
   }
   .btn {
     margin: 1em;
@@ -405,7 +383,6 @@ textarea::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   align-items: center;
   display: flex;
-  padding-left: 40px;
 }
 .img-rotate{
   animation: rotateImg 7s linear infinite;
@@ -468,10 +445,6 @@ textarea::-webkit-scrollbar-thumb:hover {
   }
   .about-section {
     background-image: url("../assets/images/about-sm-bg.png");
-  }
-  .v-divider {
-    border-right-width: 0 !important;
-    border-color: transparent !important;
   }
 }
 @media (max-width: 400px) {

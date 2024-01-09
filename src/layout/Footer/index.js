@@ -17,8 +17,7 @@ const Footer = () => {
     const status = useSelector(selectStatus)
     const [email, setEmail] = useState();
     const [emailErr, setEmailErr] = useState();
-    const [show, setShow] = useState(false);
-    const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+    const [show, setShow] = useState(false)
     const validate = useCallback(()=>{
         let check = true;
         setEmailErr('');
@@ -32,10 +31,6 @@ const Footer = () => {
         }
         return check;
     },[email])
-
-    useEffect(() => {
-        setCurrentYear(new Date().getFullYear());
-    }, []);
 
     useEffect(()=>{
         if(status === "Success"){
@@ -62,7 +57,7 @@ const Footer = () => {
                         {!show &&
                             <Grid container spacing={5}>
                                 <Grid item xs = {7}>
-                                    <Input handler={setEmail} value = {email} placeHolder = "Your Email" error={emailErr} sx={{width:'100%'}}/>
+                                    <Input handler={setEmail} value = {email} placeHolder = "Subscribe" error={emailErr} sx={{width:'100%'}}/>
                                 </Grid>
                                 <Grid item xs = {5}>
                                     <Button handler = {handlerSubscribe} className="btn-lg bg-gp p-lr-20" title="Subscribe" />  
@@ -71,7 +66,7 @@ const Footer = () => {
                         }
                         {show && (<Stack direction="row" alignItems='center'>
                                 <Box component="img" src={checkIcon}></Box>
-                                <Box className="p-lr-10 t-o f-body">Subscription Successful <br /> You have successfully subscribed to our newsletter. Stay tuned for the updates and news</Box>
+                                <Box className="p-lr-10 t-o f-body">Subscription Successful <br /> You've successfully subscribed to our emails. Stay tuned for updates and news.</Box>
                             </Stack>
                             )
                         }
@@ -83,48 +78,48 @@ const Footer = () => {
                                 <Box className="f-body t-s m-tb-10">Site</Box>
                             </Grid>
                             <Grid item xs={4}>
-                                <Box className="f-body t-s m-tb-10">Social</Box>
+                                <Box className="f-body t-s m-tb-10">Join us</Box>
                             </Grid>
                             <Grid item xs={4}>
-                                <Box className="f-body t-s m-tb-10">Legal</Box>
+                                <Box className="f-body t-s m-tb-10">Links</Box>
                             </Grid>
                         </Grid>
                             
                         <Grid container>
                             <Grid item xs={4}>
-                                <Link  to="/home" className="ext-link t-body no-line m-tb-10">Home</Link>
+                                <Link  to="/home" className="ext-link t-p t-body no-line m-tb-10">Home</Link>
                             </Grid>
                             <Grid item xs={4}>
-                                <ExternalLink icon={false} title="Telegram" href="https://t.me/dokdo_official" className="t-body no-line m-tb-10" />
+                                <ExternalLink icon={false} title="Telegram" href="https://t.me/dokdo_official" className="t-p t-body no-line m-tb-10" />
                             </Grid>
                             <Grid item xs={4}>
-                                <Link  to="/terms" className="ext-link t-body no-line m-tb-10">Terms and Conditions</Link>
+                                <Link  to="/terms" className="ext-link t-p t-body no-line m-tb-10">Terms and Conditions</Link>
                             </Grid>
                         </Grid>
                         <Grid container>
                             <Grid item xs={4}>
-                                <Link to="/about" className="ext-link t-body no-line m-tb-10">Our team</Link>
+                                <Link to="/about" className="ext-link t-p t-body no-line m-tb-10">About us</Link>
                             </Grid>
                             <Grid item xs={4}>
-                                <ExternalLink icon={false} title="X.com" href="https://x.com/dokdo_sh" className="t-body no-line m-tb-10" />
+                                <ExternalLink icon={false} title="Twitter" href="https://twitter.com/dokdo_sh" className="t-p t-body no-line m-tb-10" />
                             </Grid>
                             <Grid item xs={4}>
-                                <Link  to="/policy" className="ext-link t-body no-line m-tb-10">Privacy Policy</Link>
+                                <Link  to="/policy" className="ext-link t-p t-body no-line m-tb-10">Privacy Policy</Link>
                             </Grid>
 
                         </Grid>
                         <Grid container>
                             <Grid item xs={4}>
-                                <Link title="Contact us" to="/contact" className="ext-link t-body no-line m-tb-10">Contact us</Link>
+                                <Link title="Contact us" to="/contact" className="ext-link t-p t-body no-line m-tb-10">Contact us</Link>
                             </Grid>
                             <Grid item xs={4}>
-                                <ExternalLink icon={false} title="Linkedin" href="https://www.linkedin.com/company/dokdo-sh/" className="t-body no-line m-tb-10" />
+                                <ExternalLink icon={false} title="Linkedin" href="https://www.linkedin.com/company/dokdo-sh/" className="t-p t-body no-line m-tb-10" />
                             </Grid>
                             
                         </Grid>
                         <Grid container>
                             <Grid item xs={4}>
-                                <ExternalLink icon={true} status="inactive" title="Blog" href="https://medium.com/@dokdo_sh" className="t-body no-line m-tb-10" />
+                                <ExternalLink icon={true} status="inactive" title="Blog" href="https://medium.com/@dokdo_sh" className="t-p t-body no-line m-tb-10" />
                             </Grid>
                             {/* <Grid item xs={4}>
                                 <ExternalLink icon={false} title="Github" href="/" className="t-p t-body no-line m-tb-10" />
@@ -132,7 +127,7 @@ const Footer = () => {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Box sx={{textAlign:'center'}} className= "t-s t-body2 p-tb-40">@{currentYear} DOKDO. All rights reserved.</Box>
+                <Box sx={{textAlign:'center'}} className= "t-s t-body2 p-tb-40">@2023 DOKDO. All rights reserved.</Box>
             </Container>
         </Box>
     );
