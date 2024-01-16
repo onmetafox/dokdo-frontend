@@ -19,7 +19,7 @@ const ItemMenu = ({ className, href, index, children }) => {
     
     return (
         <>
-            {index && href!== '/blog' && (<Link to={href} className={classNames}>{children}</Link>)}
+            {index && href !== '/blog' && (<Link to={href} className={classNames}>{children}</Link>)}
             {href === '/blog' && (<ExternalLink title="Blog" status="inactive" className = {classNames} icon={true} href = "https://medium.com/@dokdo_sh"/>)}
         </>
     )

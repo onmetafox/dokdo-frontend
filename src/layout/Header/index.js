@@ -8,6 +8,7 @@ import logoIcon from "../../assets/images/logo2.svg";
 import ItemMenu from 'src/components/ItemMenu';
 import routes from 'src/routes';
 import HeaderScroll from 'src/components/HeaderScroll';
+import defaultLinkIcon from "../../assets/icons/default-link.svg";
 
 const Header = (props) => {
     const { pathname } = useLocation();
@@ -35,8 +36,13 @@ const Header = (props) => {
                             {pathname === href &&  (
                                 <Link to={href} className='link f-body corner-3' sx={{justifyContent:'center'}}><ListItemText primary={title} /></Link>
                             )}
-                            {pathname !== href &&  (
+                            {pathname !== href && href !== '/blog' &&  (
                                 <Link to={href} className='link f-body' sx={{justifyContent:'center'}}><ListItemText primary={title} /></Link>
+                            )}
+                            {pathname !== href && href === '/blog' &&  ( <>
+                                <Link to={"https://medium.com/@dokdo_sh"} target='_blink' className='link f-body' sx={{justifyContent:'center'}}><ListItemText primary={title} /></Link>
+                                <img src={defaultLinkIcon} style={{margin:0}} alt='link'/>
+                            </>
                             )}
                         </ListItemButton>
                     </ListItem>

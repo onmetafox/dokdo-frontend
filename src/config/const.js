@@ -10,7 +10,7 @@ import solar4Icon from "../assets/images/solar4.png"
 import districtIcon  from "../assets/images/district.png";
 import tymtIcon from "../assets/images/tymt.png";
 import solarIcon from "../assets/images/solar.png";
-import twiterIcon from "../assets/icons/twitter.svg";
+import xIcon from "../assets/icons/X.svg";
 import tgIcon from "../assets/icons/tg.svg";
 // import discordIcon from "../assets/icons/discord.svg";
 // import gitIcon from "../assets/icons/github.svg";
@@ -25,22 +25,22 @@ export const solarData = [
     {
         image: solar1Icon,
         title:"DPoS Consensus",
-        detail: "The Solar Blockchain employs a forked Delegated Proof of Stake Consensus from ARK Core, featuring 53 block producers in its network"
+        detail: "The Solar Blockchain employs a forked Delegated Proof of Stake Consensus from ARK Core, featuring 53 block producers in its network."
     },
     {
         image: solar2Icon,
         title:"Fast & Secure",
-        detail: "The Solar Blockchain excels with 53 block producers and a rapid 8-second block-time, cementing its status in the blockchain industry"
+        detail: "The Solar Blockchain excels with 53 block producers and a rapid 8-second block-time, cementing its status in the blockchain industry."
     },
     {
         image: solar3Icon,
         title:"Voting",
-        detail: "You can engage with the network as a block producer or vote for one of the 53 producers to potentially earn network commissions"
+        detail: "You can engage with the network as a block producer or vote for one of the 53 producers to potentially earn network commissions."
     },
     {
         image: solar4Icon,
         title:"Advanced Ecosystem",
-        detail: "Solar offers developers and users a robust toolkit, fostering innovation to keep the Solar Blockchain at the industry forefront"
+        detail: "Solar offers developers and users a robust toolkit, fostering innovation to keep the Solar Blockchain at the industry forefront."
     }
 ]
 
@@ -76,15 +76,15 @@ export const productData = [
     },
     {
         button: "Platform for games",
-        title: "Tymt",
-        detail: "Developed by Dokdo, the same innovative minds behind District 53 Metaverse, tymt is a promising solution set to revolutionise the gaming industry. This next generation game launcher bridges the gap between traditional, blockchain, and Web3 games, overcoming the challenges that have often hampered blockchain gaming. District 53, a voxel-based Metaverse game utilising the Solar Blockchain, had drawn significant attention and reached.",
+        title: "tymt",
+        detail: "Developed by Dokdo, the same innovative minds behind District 53 Metaverse, tymt is a promising solution set to revolutionize the gaming industry. This next-generation game launcher bridges the gap between traditional and Web3 games, overcoming the challenges that have often hampered blockchain gaming.",
         image: tymtIcon,
         link: "https://medium.com/@district53"
     },
     {
-        button: "Wallet",
+        button: "Fintech",
         title: "Solar Card",
-        detail: "Digital payments with crypto debit cards and IBAN accounts combined with concierge services. Digital payments with crypto debit cards and IBAN account combined with concierge services.",
+        detail: "The Solar Card is your gateway to the world of crypto and fiat transactions. It offers a flexible, secure way to manage your finances, with features like fiat wallets, custodian crypto wallets by Kraken, and an internal SXP wallet, including prepaid options without KYC up to 5000 euros.",
         image: solarIcon,
         link: "https://medium.com/@district53"
     }
@@ -94,14 +94,14 @@ export const joinData = [
     {
         icon: tgIcon,
         title: "Community Chat",
-        detail: "Feel free to ask any questions and have friendly chats with people from around the world",
+        detail: "Feel free to ask any questions and have friendly chats with people from around the world.",
         link: "https://t.me/dokdo_official "
     },
     {
-        icon: twiterIcon,
-        title: "Twitter",
-        detail: "Stay tuned for the freshest news and updates from all around the ecosystem by following us",
-        link: "https://twitter.com/dokdo_sh"
+        icon: xIcon,
+        title: "X.com",
+        detail: "Stay tuned for the freshest news and updates from all around the ecosystem by following us.",
+        link: "https://x.com/dokdo_sh"
     },
     // {
     //     icon: discordIcon,
@@ -122,7 +122,7 @@ export const developerData = [
     {
         icon: mediumIcon,
         title: "Medium blog",
-        detail: "Please visit our Medium blog for the latest articles and updates",
+        detail: "Please visit our Medium blog for the latest articles and updates.",
         link: "https://medium.com/@dokdo_sh"
     }
 ]
@@ -132,34 +132,34 @@ export const aboutData = [
         image: ceoImg,
         title: "Nayiem Willems",
         detail: "CEO",
-        link: "Twitter",
-        href: "https://twitter.com/WillemsTRA"
+        link: "X.com",
+        href: "https://x.com/WillemsTRA"
     },
     {
         image: ctoImg,
         title: "Arman Stepanyan",
-        detail: "CTO",
+        detail: "Full Stack Developer",
         link: "Linkedin",
         href: "https://www.linkedin.com/in/arman-stepanyan-67412a146/"
     },
     {
         image: tpmImg,
         title: "Samvel Barseghyan",
-        detail: "TPM",
+        detail: "Full Stack Developer",
         link: "Linkedin",
         href: "https://www.linkedin.com/in/samvel-barseghyan-305085195/"
     },
     {
         image: developerImg,
         title: "Kang Jun Rui",
-        detail: "Full-Stack Developer",
-        link: "Linkedin",
-        href: "https://www.linkedin.com/in/onmetafox/"
+        detail: "Full Stack Developer ",
+        link: "X.com",
+        href: "https://twitter.com/onemetafox/"
     },
     {
         image: designerImg,
         title: "Taras Oliinyk",
-        detail: "Product Designer",
+        detail: "Lead UI/UX designer ",
         link: "Linkedin",
         href: "https://www.linkedin.com/in/taras-oliinyk/"
     }
