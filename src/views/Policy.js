@@ -1,8 +1,11 @@
 import React from "react";
 // import { Stack, Divider, Container, Box } from "@mui/material";
-import { Box } from "@mui/material";
+import { Box, Container } from "@mui/material";
+import Button from "src/components/Button";
+import { useNavigate } from 'react-router-dom';
 
 const Policy = ({route}) => {
+    const navigate = useNavigate();
     // const middleDot = '\u00B7';
     // return <Box className = "p-tb-80">
     //     <Container  maxWidth="md" sx={{textAlign:'center'}}>
@@ -62,24 +65,29 @@ const Policy = ({route}) => {
     //     </Container>       
     // </Box>
     return (
-        <div className="terms-section">
-            <Box
-                display="flex"
-                flexDirection="column"
-                alignItems="center"
-                justifyContent="center"
-                height="100%"
-            >
-            <Box className="h3 t-p ">
-                Privacy Policy
-            </Box>
-            <Box className="terms-content">
-                <Box className="h4 t-p">
-                    Soon to be announced
+        <Box className="terms-section">
+            <Container maxWidth="xl">
+                <Box
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    justifyContent="center"
+                    height="100%"
+                >
+                    <Box className="h3 t-p ">
+                        Privacy Policy
+                    </Box>
+                    <Box className="terms-content">
+                        <Box className="fs-s2 t-p">
+                            Soon to be announced
+                        </Box>
+                    </Box>
+                    <Box>
+                        <Button title={"Back to home"} className="product-button m-tb-10" handler={()=>{navigate("/")}}/>
+                    </Box>
                 </Box>
-            </Box>
-            </Box>
-        </div>
+            </Container>
+        </Box>
     )
 }
 

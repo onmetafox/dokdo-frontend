@@ -1,8 +1,10 @@
 import React from "react";
 // import { Stack, Divider, Container, Box } from "@mui/material";
 import { Box } from "@mui/material";
-
+import Button from "src/components/Button";
+import { useNavigate } from 'react-router-dom';
 const Terms = ({route}) => {
+    const navigate = useNavigate();
     // const middleDot = '\u00B7';
     // return <Box className = "p-tb-80">
     //     <Container maxWidth="md" sx={{textAlign:'center'}}>
@@ -65,7 +67,7 @@ const Terms = ({route}) => {
     //     </Container>       
     // </Box>
     return (
-        <div className="terms-section">
+        <Box className="terms-section">
             <Box
                 display="flex"
                 flexDirection="column"
@@ -73,16 +75,19 @@ const Terms = ({route}) => {
                 justifyContent="center"
                 height="100%"
             >
-            <Box className="h3 t-p">
-                Terms and Conditions
-            </Box>
-            <Box className="terms-content">
-                <Box className="h4 t-p">
-                    Soon to be announced
+                <Box className="h3 t-p">
+                    Terms and Conditions
+                </Box>
+                <Box className="terms-content">
+                    <Box className="fs-s2 t-p">
+                        Soon to be announced
+                    </Box>
+                </Box>
+                <Box>
+                    <Button title={"Back to home"} className="product-button m-tb-10" handler={()=>{navigate("/")}}/>
                 </Box>
             </Box>
-            </Box>
-        </div>
+        </Box>
     )
 }
 
