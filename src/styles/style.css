@@ -76,7 +76,7 @@ header {
 .ext-link {
   border-radius: 8px;
   border: none;
-  font-size: 16px !important;
+  font-size: 16px;
   font-weight: bold !important;
   text-align: center;
   color: #FFFFFF;

@@ -5,7 +5,7 @@ import SolarSection from './SolarSection';
 // import ServiceSection from './ServiceSection';
 import ProductSection from './ProductSection';
 import JoinSection from './JoinSection';
-import DeveloperSection from './DeveloperSection';
+// import DeveloperSection from './DeveloperSection';
 
 const HomePage = () => {
     return <>
@@ -15,7 +15,7 @@ const HomePage = () => {
         {/* <ServiceSection /> */}
         <ProductSection />
         <JoinSection />
-        <DeveloperSection />
+        {/* <DeveloperSection /> */}
     </>
     
 }

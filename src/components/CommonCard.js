@@ -13,7 +13,7 @@ const CommonCard = (props) => {
             </Grid>
             <Grid item lg={10} md={10} sm = {10} xs={10} sx={{textAlign: "left"}}>
                 <Link href= {link} className="t-p fs-s no-line" title={title} icon={true} status="inactive" />
-                <Box className= "t-p m-tb-10"> {detail} </Box>
+                <Box className= "t-s f-body m-tb-10"> {detail} </Box>
             </Grid>
         </Grid>
 }

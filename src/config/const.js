@@ -103,12 +103,12 @@ export const joinData = [
         detail: "Stay tuned for the freshest news and updates from all around the ecosystem by following us.",
         link: "https://x.com/dokdo_sh"
     },
-    // {
-    //     icon: discordIcon,
-    //     title: "Discord Chat",
-    //     detail: "Exciting news! Our Discord community is on its way. Stay tuned",
-    //     link: "Github.com"
-    // }
+    {
+        icon: mediumIcon,
+        title: "Medium blog",
+        detail: "Please visit our Medium blog for the lastest articles and updates",
+        link: "https://medium.com/@dokdo_sh"
+    }
 
 ]
 
