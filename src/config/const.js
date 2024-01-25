@@ -19,6 +19,10 @@ import mediumIcon from "../assets/icons/medium.svg";
 import ceoImg from "../assets/photo/ceo.png";
 import ctoImg from "../assets/photo/cto.png";
 import tpmImg from "../assets/photo/tpm.png";
+import cooImg from "../assets/photo/coo.png";
+import leadImg from "../assets/photo/lead.png";
+import devopsImg from "../assets/photo/devops.png";
+import uiuxImg from "../assets/photo/uiux.png";
 import designerImg from "../assets/photo/designer.png";
 import developerImg from "../assets/photo/developer.png";
 export const solarData = [
@@ -131,9 +135,23 @@ export const aboutData = [
     {
         image: ceoImg,
         title: "Nayiem Willems",
-        detail: "CEO",
+        detail: "Chief Executive Officer",
         link: "X.com",
         href: "https://x.com/WillemsTRA"
+    },
+    {
+        image: cooImg,
+        title: "Michiel Simons",
+        detail: "Chief Operating Officer",
+        link: "Linkedin",
+        href: "https://www.linkedin.com/in/michiel-simons-881332178"
+    },
+    {
+        image: leadImg,
+        title: "Armand Habets",
+        detail: "Sr.Project Lead",
+        link: "Linkedin",
+        href: "https://www.linkedin.com/in/armandhabets"
     },
     {
         image: ctoImg,
@@ -152,15 +170,29 @@ export const aboutData = [
     {
         image: developerImg,
         title: "Kang Jun Rui",
-        detail: "Full Stack Developer ",
+        detail: "Full Stack Developer",
         link: "X.com",
         href: "https://twitter.com/onemetafox/"
     },
     {
-        image: designerImg,
-        title: "Taras Oliinyk",
-        detail: "Lead UI/UX designer ",
+        image: devopsImg,
+        title: "Eduard Fyodorov",
+        detail: "Developer Engineer",
         link: "Linkedin",
         href: "https://www.linkedin.com/in/taras-oliinyk/"
+    },
+    {
+        image: designerImg,
+        title: "Taras Oliinyk",
+        detail: "Lead UI/UX designer",
+        link: "Linkedin",
+        href: "https://www.linkedin.com/in/taras-oliinyk/"
+    },
+    {
+        image: uiuxImg,
+        title: "Iryna Kalinku",
+        detail: "UI/UX designer",
+        link: "Linkedin",
+        href: "https://www.linkedin.com/in/kalinku-design/"
     }
 ]

@@ -19,7 +19,7 @@ const MainLayout = (props) => {
     return (
         <Box className = "body">
             <Header />
-            <Box minHeight="calc(100vh - 64px)" display="flex" flexDirection="column">
+            <Box minHeight="calc(100vh - 460px)" display="flex" flexDirection="column">
                 <Outlet />
             </Box>
             <ScrollTop {...props}>

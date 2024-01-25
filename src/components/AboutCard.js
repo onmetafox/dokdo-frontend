@@ -17,7 +17,7 @@ const AboutCard = (props) => {
             <Box className="fs-s t-p m-tb-5">{title}</Box>
             <Box className="f-body-2 t-s m-tb-5">{detail}</Box>
             <Box component="img" src={lineIcon} sx={{width:"10%"}}></Box>
-            <Link icon = {true} status="active" className="t-o no-line" title={link} href={href}></Link>
+            <Link icon = {true} status="inactive" className="link no-line" title={link} href={href}></Link>
         </Grid>
     </>
 }

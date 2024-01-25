@@ -109,7 +109,7 @@ header {
   background-image: url("../assets/images/terms-bg.png");
   background-size: cover; 
   text-align: center;
-  min-height: 890px;
+  min-height: calc(100vh - 460px);
   justify-content: center;
   align-items: center;
   display: flex;
