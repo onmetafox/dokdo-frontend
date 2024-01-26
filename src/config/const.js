@@ -23,6 +23,7 @@ import cooImg from "../assets/photo/coo.png";
 import leadImg from "../assets/photo/lead.png";
 import devopsImg from "../assets/photo/devops.png";
 import uiuxImg from "../assets/photo/uiux.png";
+import fdevImg from "../assets/photo/fdev.png";
 import designerImg from "../assets/photo/designer.png";
 import developerImg from "../assets/photo/developer.png";
 export const solarData = [
@@ -173,6 +174,13 @@ export const aboutData = [
         detail: "Full Stack Developer",
         link: "X.com",
         href: "https://twitter.com/onemetafox/"
+    },
+    {
+        image: fdevImg,
+        title: "Robert Martirosyan",
+        detail: "Full Stack Developer",
+        link: "Linkedin",
+        href: "https://www.linkedin.com/in/robert-martirosyan-0b15b823b/"
     },
     {
         image: devopsImg,

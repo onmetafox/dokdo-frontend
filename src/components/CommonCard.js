@@ -12,7 +12,7 @@ const CommonCard = (props) => {
                 <Box component="img" src={icon} sx={{width:'2em'}}></Box>
             </Grid>
             <Grid item lg={10} md={10} sm = {10} xs={10} sx={{textAlign: "left"}}>
-                <Link href= {link} className="link fs-s no-line" title={title} icon={true} status="inactive" />
+                <Link href= {link} className="hover-link fs-s no-line" title={title} icon={true} status="inactive" />
                 <Box className= "t-s f-body m-tb-10"> {detail} </Box>
             </Grid>
         </Grid>

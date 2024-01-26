@@ -180,6 +180,13 @@ header {
   color: white;
   font-weight: bold;
 }
+
+.hover-link {
+  text-decoration: none !important;
+  color: white;
+  font-weight: bold;
+}
+
 .dialog{
   /* background-image: url("../assets/images/thanks-bg.png");
   background-size: cover; */
@@ -247,7 +254,7 @@ header {
 .contact-section {
   background-image: url("../assets/images/contact-bg.png");
   background-size: cover;
-  min-height: 700px;
+  min-height: calc(100vh - 460px);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -258,6 +265,7 @@ header {
   justify-content: center;
   align-items: center;
   display: flex;
+  min-height: calc(100vh - 460px);
 }
 .about-card{
   text-align: left;
