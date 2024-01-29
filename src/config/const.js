@@ -185,7 +185,7 @@ export const aboutData = [
     {
         image: devopsImg,
         title: "Eduard Fyodorov",
-        detail: "Developer Engineer",
+        detail: "Devops Engineer",
         link: "Linkedin",
         href: "https://www.linkedin.com/in/taras-oliinyk/"
     },

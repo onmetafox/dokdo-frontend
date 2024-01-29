@@ -1,12 +1,25 @@
 #!/usr/bin/env groovy
 
-node {
+def jobName = env.JOB_NAME
+echo "Job name: ${jobName}"
+def jobEnv = jobName.split('-').last()
+env.JOB_ENV = jobEnv
+echo "Job env: ${env.JOB_ENV}"
+
+def label = 'devagent'
+
+if(jobEnv == 'prod') {
+    label = 'prodagent'
+}
+
+node("${label}") {
+
     env.SERVICE = 'dokdo-frontend'
     env.RESTART = false
     env.SOURCE = 'build'
 
     try {
-        load "${JENKINS_HOME}/scripts/pipeline.head.groovy"
+        load "${HOME}/scripts/pipeline.head.groovy"
 
         stage('Prepare') {
             echo "prepare..."
@@ -18,11 +31,11 @@ node {
 	    stage('Build') {
             echo "build started..."
             nodejs('node 18.18.0') {  
-                sh "npm run build"
+                sh "yarn build"
             }
         }
 
-        load "${JENKINS_HOME}/scripts/pipeline.post.groovy"
+        load "${HOME}/scripts/pipeline.post.groovy"
     }
     catch(Exception ex) {
         currentBuild.result = "FAILED"
