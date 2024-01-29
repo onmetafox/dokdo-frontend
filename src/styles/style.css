@@ -180,13 +180,11 @@ header {
   color: white;
   font-weight: bold;
 }
-
-.hover-link {
+.join-link{
   text-decoration: none !important;
   color: white;
   font-weight: bold;
 }
-
 .dialog{
   /* background-image: url("../assets/images/thanks-bg.png");
   background-size: cover; */
@@ -254,10 +252,11 @@ header {
 .contact-section {
   background-image: url("../assets/images/contact-bg.png");
   background-size: cover;
-  min-height: calc(100vh - 460px);
+  min-height: 700px;
   justify-content: center;
   align-items: center;
   display: flex;
+  min-height: calc(100vh - 460px);
 }
 .about-section {
   background-image: url("../assets/images/about-bg.png");
@@ -281,6 +280,10 @@ header {
   /* .photo {
     margin-left: 0;
   } */
+  .photo{
+    width: 100%;
+    height: 100%;
+  }
 }
 .contact-box {
   margin: 1em;

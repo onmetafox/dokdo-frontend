@@ -23,9 +23,10 @@ import cooImg from "../assets/photo/coo.png";
 import leadImg from "../assets/photo/lead.png";
 import devopsImg from "../assets/photo/devops.png";
 import uiuxImg from "../assets/photo/uiux.png";
-import fdevImg from "../assets/photo/fdev.png";
 import designerImg from "../assets/photo/designer.png";
 import developerImg from "../assets/photo/developer.png";
+import robertImg from "../assets/photo/robert.png";
+
 export const solarData = [
     {
         image: solar1Icon,
@@ -176,18 +177,19 @@ export const aboutData = [
         href: "https://twitter.com/onemetafox/"
     },
     {
-        image: fdevImg,
-        title: "Robert Martirosyan",
-        detail: "Full Stack Developer",
-        link: "Linkedin",
-        href: "https://www.linkedin.com/in/robert-martirosyan-0b15b823b/"
-    },
-    {
         image: devopsImg,
         title: "Eduard Fyodorov",
         detail: "Devops Engineer",
         link: "Linkedin",
-        href: "https://www.linkedin.com/in/taras-oliinyk/"
+        href: "https://www.linkedin.com/in/eduardfyodorov/"
+
+    },
+    {
+        image: robertImg,
+        title: "Robert Martirosyan",
+        detail: "Developer",
+        link: "X.com",
+        href: "https://www.linkedin.com/in/robert-martirosyan-0b15b823b/"
     },
     {
         image: designerImg,
@@ -195,6 +197,7 @@ export const aboutData = [
         detail: "Lead UI/UX designer",
         link: "Linkedin",
         href: "https://www.linkedin.com/in/taras-oliinyk/"
+
     },
     {
         image: uiuxImg,
