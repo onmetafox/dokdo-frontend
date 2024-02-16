@@ -17,8 +17,8 @@ import tgIcon from "../assets/icons/tg.svg";
 import mediumIcon from "../assets/icons/medium.svg";
 
 import ceoImg from "../assets/photo/ceo.png";
-import ctoImg from "../assets/photo/cto.png";
-import tpmImg from "../assets/photo/tpm.png";
+// import ctoImg from "../assets/photo/cto.png";
+// import tpmImg from "../assets/photo/tpm.png";
 import cooImg from "../assets/photo/coo.png";
 import leadImg from "../assets/photo/lead.png";
 import devopsImg from "../assets/photo/devops.png";
@@ -26,6 +26,9 @@ import uiuxImg from "../assets/photo/uiux.png";
 import designerImg from "../assets/photo/designer.png";
 import developerImg from "../assets/photo/developer.png";
 import robertImg from "../assets/photo/robert.png";
+import bruceImg from "../assets/photo/bruce.png";
+import farhanImg from "../assets/photo/farhan.png";
+import jingImg from "../assets/photo/jing.png";
 
 export const solarData = [
     {
@@ -155,19 +158,26 @@ export const aboutData = [
         link: "Linkedin",
         href: "https://www.linkedin.com/in/armandhabets"
     },
+    // {
+    //     image: ctoImg,
+    //     title: "Arman Stepanyan",
+    //     detail: "Full Stack Developer",
+    //     link: "Linkedin",
+    //     href: "https://www.linkedin.com/in/arman-stepanyan-67412a146/"
+    // },
+    // {
+    //     image: tpmImg,
+    //     title: "Samvel Barseghyan",
+    //     detail: "Full Stack Developer",
+    //     link: "Linkedin",
+    //     href: "https://www.linkedin.com/in/samvel-barseghyan-305085195/"
+    // },
     {
-        image: ctoImg,
-        title: "Arman Stepanyan",
-        detail: "Full Stack Developer",
-        link: "Linkedin",
-        href: "https://www.linkedin.com/in/arman-stepanyan-67412a146/"
-    },
-    {
-        image: tpmImg,
-        title: "Samvel Barseghyan",
-        detail: "Full Stack Developer",
-        link: "Linkedin",
-        href: "https://www.linkedin.com/in/samvel-barseghyan-305085195/"
+        image: jingImg,
+        title: "Jing Zhao",
+        detail: "Chief Technology Offier",
+        link: "X.com",
+        href: "https://twitter.com/zhjing0105"
     },
     {
         image: developerImg,
@@ -175,6 +185,20 @@ export const aboutData = [
         detail: "Full Stack Developer",
         link: "X.com",
         href: "https://twitter.com/onemetafox/"
+    },
+    {
+        image: farhanImg,
+        title: "Farhan Yusof",
+        detail: "Full-Stack Developer",
+        link: "Linkedin",
+        href: "https://www.linkedin.com/in/farhan-yusof-0baa592b4/"
+    },
+    {
+        image: bruceImg,
+        title: "Bruce Hamada",
+        detail: "Full-Stack Developer",
+        link: "Linkedin",
+        href: " https://www.linkedin.com/in/bruce-hamada-12a19a2b4/"
     },
     {
         image: devopsImg,
